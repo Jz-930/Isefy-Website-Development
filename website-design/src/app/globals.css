@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-isefy-purple: #7B1FA2;
+  --color-isefy-dark-purple: #4A148C;
+  --color-isefy-blue: #0D47A1;
+  --color-isefy-dark-blue: #002171;
+  --color-accent: #00E5FF;
+  --color-gray-main: #333333;
+  --color-gray-text: #666666;
+  --color-gray-light: #F5F7FA;
+  --color-gray-border: #E0E0E0;
+  --color-isefy-footer: #1A052E;
+}
+
+@layer base {
+  :root {
+    --isefy-purple: #7B1FA2;
+    --isefy-dark-purple: #4A148C;
+    --isefy-blue: #0D47A1;
+    --isefy-dark-blue: #002171;
+  }
+}
+
+/* Custom Utilities mimicking the legacy CSS */
+@layer components {
+  .btn {
+    @apply inline-block px-8 py-3 rounded-full font-semibold text-center border-2 border-transparent transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply inline-block px-8 py-3 rounded-full font-semibold text-center border-2 border-transparent transition-all duration-300 text-white shadow-lg shadow-purple-900/30 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-purple-900/50;
+    background: linear-gradient(135deg, var(--isefy-purple), var(--isefy-dark-purple));
+  }
+
+  .btn-outline {
+    @apply bg-transparent border-2 text-isefy-purple border-isefy-purple hover:bg-isefy-purple hover:text-white;
+  }
+
+  .container-custom {
+    @apply max-w-[1200px] mx-auto px-5;
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-gray-main;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-text;
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@layer utilities {
+  .animate-twinkle {
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.6);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

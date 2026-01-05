@@ -1,0 +1,624 @@
+ISEFY Website Content - English Final (v3)
+Date: 2025-12-17
+--------------------------------------------------------------------------------
+
+================================================================================
+GLOBAL NAVIGATION (Navbar & Footer)
+================================================================================
+
+[Navbar]
+Menu Items:
+- Products
+- Solutions
+- App
+- Cloud
+- Support
+- Shop (Button)
+
+[Footer]
+Slogan:
+Your innovative partner in home security technology
+
+Links Group - Products:
+- Outdoor Cameras
+- Indoor Cameras
+- Video Doorbells
+- Smart Locks
+- Accessories
+
+Links Group - Support:
+- Help Center
+- Setup Guides
+- Downloads
+- Warranty & RMA
+- Contact Us
+
+Links Group - Services:
+- ISEFY Protect (Cloud)
+- ISEFY App
+- Open Platform
+- Become a Partner
+
+Links Group - About:
+- About Us
+- Newsroom
+- Privacy Policy
+- Terms of Use
+
+Copyright:
+© 2025 ISEFY Technologies LTD. All Rights Reserved.
+Toronto, Canada
+
+================================================================================
+PAGE: HOMEPAGE (src/app/page.tsx)
+================================================================================
+
+[Hero Section]
+Title: Complete Home Protection by ISEFY
+Subtitle: ISEFY's smart solution integrates all our products into a single app for seamless interaction.
+Buttons:
+- View Products
+- Explore Solutions
+
+[Product Line Overview]
+Heading: Product Line
+Subheading: Network Cameras (Indoor / Outdoor) • Video Doorbell • Smart Lock
+
+Card 1: Network Cameras (Indoor / Outdoor)
+- Smart Tracking, Active Deterrence, Smart Color Night Vision, and AI detection help you stay protected day and night.
+- Link: View Collection
+
+Card 2: Video Doorbell – Pivot (2K Wire‑Free)
+- 30° pan lens + smart tracking, PIR + AI human & loitering detection, and a chime that works as a Wi‑Fi extender and local storage hub.
+- Link: Learn More
+
+Card 3: Smart Lock – Sentinel (SL100WB)
+- Unlock in seconds with instant biometrics, and manage access through a Wi‑Fi enabled mobile app with real‑time alerts.
+- Link: Learn More
+
+[Scenario Cards]
+Heading: Product Platform Applications
+- Residential
+- Retail
+- SOHO
+
+[Core Capabilities]
+- Smart Color Night Vision (four night vision modes)
+- Advanced AI Human & Vehicle Detection (reduced false alerts)
+- Detection Region (custom motion detection zones)
+- Full‑duplex Two‑way Talk with Variable Voice (supported on Pivot)
+- Active Deterrence (built‑in spotlight + 110dB siren)
+- Smart Control, Fully Customizable Security (schedules, routines, one‑tap triggers)
+Button: Explore Key Features
+
+[Ecosystem Section]
+Heading: Complete Home Protection
+Description: ISEFY's smart solution integrates all our products into a single app for seamless interaction.
+Button: Explore Complete Solutions
+
+[Cloud Services Section]
+Heading: ISEFY Protect (Cloud Service)
+Description:
+ISEFY Protect is a subscription service that enhances your ISEFY products with advanced cloud computing technology,
+providing upgraded security features and a smarter, more reliable protection experience.
+
+Features:
+- Up to 30 Days Event History
+- Unlimited Storage
+- Smoother Playback
+- Cloud Storage
+- Enhanced AI Detection
+- Share devices with up to 20 users
+- Download SD card recordings remotely
+- Device Health Guard
+- Security Report
+Button: View Subscription Details
+
+[Trust/Footer]
+Trusted by Homes & Businesses
+ISEFY Technologies LTD. Toronto, Canada (Founded 2024)
+
+================================================================================
+PRODUCT DATA (src/data/products.ts)
+================================================================================
+Note: These are the details used on Product Listing and Detail pages.
+
+----------------------------------------
+Product 1: DualWatch Dual‑Lens Outdoor P&T Camera (SC668W)
+Tagline: Two Lenses. Zero Blind Spots.
+Description: Dual‑lens outdoor pan/tilt camera with 3MP fixed lens + 5MP P&T lens (total 8MP), Smart Tracking, Active Deterrence, and Smart Color Night Vision.
+
+Long Description:
+DualWatch has two lenses (3MP fixed lens and 5MP pan & tilt lens). The two lenses monitor scenes independently from different angles—making one DualWatch worth two traditional single‑lens cameras.
+Fixed Lens: Manually adjustable (Pan 0–260°, Tilt 0–30°)
+Pan & Tilt Lens: Motorized control (Pan 0–355°, Tilt 0–90°)
+DualWatch supports four night vision modes for clear‑as‑day clarity even in pitch dark. With IP66 weatherproofing, a built‑in spotlight and 110dB siren, DualWatch provides proactive outdoor protection with high‑quality two‑way talk.
+
+Highlights:
+1. Two‑Lens Design: 3MP fixed view + 5MP P&T view—capture more area with one device.
+2. AI Human & Vehicle Detection + Smart Tracking: Identify targets and keep them in view with fewer false alerts.
+3. Active Deterrence: Built‑in spotlight and 110dB siren help scare away unwelcome visitors.
+4. Smart Color Night Vision: Four night vision modes for clearer nighttime evidence.
+5. Dual‑Band Wi‑Fi: Supports both 2.4GHz and 5GHz for smoother live view and playback.
+
+Key Specs:
+- Video: 3MP fixed lens (2304×1296) + 5MP P&T lens (2880×1620) — total 8MP
+- Pan/Tilt:
+  • Fixed lens (manual): Pan 0–260°, Tilt 0–30°
+  • P&T lens (motorized): Pan 0–355°, Tilt 0–90°
+- Field of View:
+  • Fixed lens: 88°(H), 45°(V), 107°(D)
+  • P&T lens: 78°(H), 41°(V), 94°(D)
+- Night Vision: Up to 30m (98ft) distance; four night vision modes
+- Video Compression: H.265 / H.264
+- Frame Rate: Up to 15fps
+- Audio: Built‑in mic & speaker; 110dB siren
+- Network: Wi‑Fi 6 (IEEE 802.11 b/g/n/ax), 2.4GHz & 5GHz; 1× 100Mbps Ethernet port
+- Storage: microSD card slot (up to 256GB); Cloud service
+- Power: DC 12V 1A; Power consumption <12W
+- Working Environment: -30°C to +50°C, less than 95% RH
+- Weatherproof: IP66
+
+Box Content (What’s in the box):
+- 1× Camera
+- 1× Quick Start Guide
+- 1× Mounting Template
+- 1× Power Adapter
+- 1× Waterproof Connector
+- 1× Screw & Anchor Pack
+
+FAQ (from ISEFY App & device settings):
+1. Can I set detection zones for the two lenses on DualWatch separately?
+   Yes. In Detection Zone settings, you can switch between the two lenses and set different detection areas for each view.
+2. How do I set up SD card for continuous recording?
+   Go to Device Details → Local Storage Settings. Turn on Scheduled Recording to enable continuous recording.
+3. Which ONVIF profiles do ISEFY cameras support?
+   ISEFY cameras support ONVIF Profile S, which covers basic video streaming and device discovery.
+4. Can I view video without internet?
+   Yes. Double‑click the reset button to activate Soft AP mode, connect your phone to the device hotspot, then use Tool → LAN Live in the ISEFY app to view locally.
+5. Can I use the camera without an SD card?
+   Yes. You can still view the live stream and receive push notifications. Video playback and recording require either an SD card or Cloud storage.
+
+----------------------------------------
+Product 2: AlertFlash Active Deterrence Camera (SC663WD)
+Tagline: Stop Crime Before It Happens.
+Description: 3MP outdoor pan/tilt camera with red‑blue warning lights, built‑in spotlight, and a powerful 110dB siren.
+
+Long Description:
+AlertFlash delivers 3MP live monitoring with a choice of 3.6mm lens option. With 0–355° pan & 0–90° tilt, AlertFlash ensures every corner of your home completely covered.
+AlertFlash supports red‑blue warning lights for a stronger deterrent to intruders. It supports four night vision modes for clear‑as‑day clarity even in pitch dark. With a weatherproof design, the camera can be used outdoors under different weather conditions.
+
+Highlights:
+1. Red‑Blue Warning Lights + Active Siren: Visually and audibly deter suspicious activity in real time.
+2. Pan & Tilt Coverage: 0–355° pan and 0–90° tilt to reduce blind spots.
+3. Smart Tracking + Human Detection: Focus on real threats while reducing unnecessary alerts.
+4. Smart Color Night Vision: Four night vision modes for clearer detail at night.
+5. Dual‑Band Wi‑Fi: Supports both 2.4GHz and 5GHz for more stable performance.
+
+Key Specs:
+- Resolution: 3MP (2304×1296)
+- Lens: 3.6mm fixed lens
+- Pan/Tilt: 0–355° pan, 0–90° tilt
+- Field of View: 87°(H), 47°(V), 106°(D)
+- Night Vision: Up to 30m (98ft) distance; four night vision modes
+- Video Compression: H.265 / H.264
+- Frame Rate: Up to 20fps
+- Audio: Built‑in mic & speaker; 110dB siren
+- Deterrence: Built‑in spotlight; 4 fill‑in lights (IR/white); 2 red‑blue warning lights
+- Network: Wi‑Fi 6 (IEEE 802.11 b/g/n/ax), 2.4GHz & 5GHz; 1× 100Mbps Ethernet port; ONVIF
+- Storage: microSD card slot (up to 512GB); Cloud service; NVR supported
+- Power: DC 12V 0.5A; Power consumption <6W
+- Working Environment: -30°C to +50°C, less than 95% RH
+- Weatherproof: Outdoor weatherproof design
+
+Box Content (What’s in the box):
+- 1× Camera
+- 1× Quick Start Guide
+- 1× Installation Position Map
+- 1× Power Adapter
+- 1× Waterproof Connector
+- 1× Screw Package
+
+FAQ (common ISEFY camera questions):
+1. The indicator light is flashing red—what should I do?
+   Reset the device. If the indicator changes to flashing green, re‑add the camera in the ISEFY App. If it stays red, the camera may be faulty—please contact ISEFY Support.
+2. How do I check if the camera connection is stable?
+   Check the Wi‑Fi icon in the Device Details page—green full bars indicate a good connection. You can also use the Wi‑Fi Detection Tool in the ISEFY app.
+3. How do I switch to Night Vision mode?
+   Ensure the device is online → Device Details → Night Vision Function → select your preferred mode.
+4. Can I set a schedule for detection and alerts?
+   Yes. In Detection Settings, configure detection schedules for specific days and times to receive alerts only when needed.
+5. What is Privacy Mode?
+   When Privacy Mode is enabled, the camera lens is physically blocked and the device will not capture video or send alerts. No images or information will be recorded during this time.
+
+----------------------------------------
+Product 3: GuardianEye Outdoor P&T Camera (SC663W)
+Tagline: See Everything, Miss Nothing.
+Description: 3MP outdoor pan/tilt camera with 0–355° pan & 0–90° tilt, four night vision modes, and IP66 weatherproofing.
+
+Long Description:
+GuardianEye delivers 3MP live monitoring with a choice of 3.6mm lens option. With 0–355° pan & 0–90° tilt, GuardianEye ensures every corner of your home completely covered.
+It supports four night vision modes for clear‑as‑day clarity even in pitch dark. With IP66 certified, the camera can be used outdoors under different weather conditions.
+
+Highlights:
+1. Wide Coverage: 0–355° pan & 0–90° tilt for full‑area monitoring.
+2. Smart Color Night Vision: Four night vision modes for clearer nighttime recordings.
+3. Active Deterrence: Built‑in spotlight + 110dB security siren.
+4. Smart Tracking + Human Detection: Automatically tracks moving objects and finds human targets faster.
+5. Diversified Storage: Supports NVR, Cloud Storage, or microSD card (up to 512GB).
+
+Key Specs:
+- Resolution: 3MP (2304×1296)
+- Lens: 3.6mm fixed lens
+- Pan/Tilt: 0–355° pan, 0–90° tilt
+- Field of View: 82°(H), 44°(V), 104°(D)
+- Night Vision: Up to 30m (98ft) distance; four night vision modes
+- Video Compression: H.265 / H.264
+- Frame Rate: Up to 20fps
+- Audio: Built‑in mic & speaker; 110dB siren
+- Network: Wi‑Fi 6 (IEEE 802.11 b/g/n/ax); ONVIF; 1× 100Mbps Ethernet port
+- Storage: microSD card slot (up to 512GB); Cloud service; NVR supported
+- Power: DC 12V 0.5A; Power consumption <6W
+- Working Environment: -30°C to +50°C, less than 95% RH
+- Weatherproof: IP66
+
+Box Content (What’s in the box):
+- 1× Camera
+- 1× Quick Start Guide
+- 1× Installation Position Map
+- 1× Mounting Bracket
+- 1× Power Adapter
+- 1× Waterproof Connector
+- 1× Screw Package
+
+----------------------------------------
+Product 4: Voyager Pan & Tilt Indoor Camera (SC613W)
+Tagline: Privacy when you’re home. Alerts when you’re away.
+Description: 3MP 2K indoor pan/tilt camera with Privacy Mode, Smart Tracking, Human Detection, and Abnormal Sound Alarm.
+
+Long Description:
+With 3MP 2K live monitoring and 0–355° pan & -5–80° tilt features, Voyager ensures every corner of your home completely covered.
+Human Detection quickly finds human targets in images and immediately sends a notification to you.
+Privacy Mode helps protect your personal privacy when you are home, and Smart Tracking lets the camera follow moving objects when it detects motion.
+
+Highlights:
+1. Full‑room Coverage: 0–355° pan & -5–80° tilt for whole‑room visibility.
+2. Abnormal Sound Alarm: Sends alerts to your smartphone when it detects abnormal sound.
+3. Privacy Mode: Hide the lens to protect your personal privacy.
+4. Smart Tracking + Human Detection: Automatically follows moving objects and focuses on real threats.
+5. Diversified Storage: Supports NVR, Cloud Storage, or microSD card (up to 512GB).
+
+Key Specs:
+- Resolution: 3MP (2304×1296) / 2K
+- Lens: 3.6mm fixed lens
+- Pan/Tilt: 0–355° pan, -5–80° tilt
+- Field of View: 79°(H), 42°(V), 94°(D)
+- Night Vision: Up to 10m (33ft) distance
+- Video Compression: H.265 / H.264
+- Frame Rate: Up to 25/30fps
+- Audio: Two‑way audio; built‑in speaker; built‑in mic
+- Network: Wi‑Fi 6 (IEEE 802.11 b/g/n/ax), 2.4GHz
+- Storage: microSD card slot (up to 512GB); Cloud service; NVR supported
+- Power: DC 5V 1A; Power consumption <3.7W
+- Working Environment: -10°C to +45°C, less than 95% RH
+
+Box Content (What’s in the box):
+- 1× Camera
+- 1× Quick Start Guide
+- 1× Power Adapter
+- 1× Power Cable
+- 1× Screw Package
+- 1× Mounting Plate
+- 1× Installation Position Map
+
+----------------------------------------
+Product 5: Pivot 2K Wire‑Free Video Doorbell (DR1003BC)
+Tagline: Wider doorway coverage—no wedge bracket needed.
+Description: 3MP/2K wire‑free video doorbell with 30° pan, PIR + AI human & loitering detection, and a chime that works as a Wi‑Fi extender and local storage hub.
+
+Long Description:
+With 3MP/2K live monitoring, an ultra wide‑view lens with 30° pan, Pivot ensures every corner in front of your door completely covered.
+With a 5000mAh rechargeable battery, Pivot is 100% wire‑free, waterproof and easy to install.
+PIR, AI human detection and loitering detection quickly find targets and immediately sends a notification to you.
+Pivot supports two‑way talk with variable voice and customizable quick voice reply to protect your privacy.
+Pivot works as a Wi‑Fi extender and a local storage, providing stable network for the doorbell and upgraded protection for the recorded footage.
+
+Highlights:
+1. 30° Pan Lens + Smart Tracking: Adjust the viewing angle digitally to reduce blind spots—ideal for side‑wall installations.
+2. Chime as Wi‑Fi Extender + Storage Base: microSD card is stored inside the chime, not the doorbell (footage stays safe indoors).
+3. Dual‑Band Wi‑Fi: Supports both 2.4GHz and 5GHz networks for faster, more stable connections.
+4. Built‑in 5000mAh Battery: Up to 120 days per charge under typical use (about 10 events/day, each with 8 seconds of video recording).
+5. PIR + AI Human + Loitering Detection: More accurate alerts with fewer false notifications.
+6. Auto Power Saving Mode: When the battery drops below a certain level (default: 10%), only doorbell presses trigger notifications.
+
+Key Specs:
+- Resolution: 3MP (2048×1536) / 2K
+- Video Compression: H.265
+- Frame Rate: Up to 15fps
+- Night Vision: Up to 5m (16.5ft) distance
+- Lens: 2.3mm fixed lens with 30° pan
+- Field of View: 125°(H), 98°(V), 166°(D)
+- Battery: 5000mAh rechargeable
+- Charging: DC 5V 1A (Type‑C port)
+- Network: Wi‑Fi (IEEE 802.11 b/g/n), 2.4GHz & 5GHz (chime works as Wi‑Fi extender for the doorbell)
+- Storage: Cloud + microSD card local storage (up to 512GB) on chime
+- Optional Hardwired Power Supply: 8–24VAC, ≥5VA
+- Recommended Mounting Height: 1.4m to 1.5m (4.6ft to 4.9ft) above the ground
+
+Box Content (What’s in the box):
+Video Doorbell:
+- 1× Doorbell
+- 1× Quick Start Guide
+- 1× Surface Mounting Bracket
+- 1× Screw Package
+- 1× Pin
+- 1× Installation Position Map
+
+Chime:
+- 1× Chime
+- 1× Chime Plug
+- 1× USB Charging Cable
+- 3× Wire Nuts
+- 2× 3M Glue
+- 2× Extension Wire
+- 1× Jumper Wire
+
+FAQ:
+1. Why don’t I receive a phone call or alert when someone presses the doorbell?
+   Enable notifications in the ISEFY app (Device Details → Notification). Also enable ISEFY notifications in your phone system settings.
+2. Which detection mode should I use—Motion Detection or Human Detection? And what is PIR?
+   We recommend Human Detection. It uses PIR (Passive Infrared Sensor), which triggers alarms by sensing heat and motion—reducing false alarms effectively.
+3. Does Pivot Doorbell support 5GHz Wi‑Fi?
+   Yes. Pivot is dual‑band and supports both 2.4GHz and 5GHz Wi‑Fi.
+4. How long does the doorbell battery last?
+   The built‑in 5000mAh rechargeable battery can last up to 120 days under typical use (about 10 events/day, each with 8 seconds of video recording).
+5. Do I need an angled bracket to install Pivot?
+   No. The Pivot doorbell lens can be remotely rotated in the ISEFY app, so there’s no need for a tilt bracket or corner kit.
+
+----------------------------------------
+Product 6: Sentinel Smart Lock (SL100WB)
+Tagline: Smart, convenient, and simple.
+Description: Wi‑Fi enabled smart lock with instant biometrics, five unlocking methods, and up to 12 months of battery life.
+
+Long Description:
+Meet the ISEFY Sentinel SL100WB, a fusion of security and convenience. With a battery life of up to 12 months, enjoy hassle‑free performance.
+Unlock in seconds with Instant Biometrics, or choose from various access methods including cards, passwords, and keys.
+Manage your lock effortlessly through a Wi‑Fi enabled mobile app, featuring user management and real‑time alerts.
+The simple installation is compatible with most US & CA latchsets and can be done in just 15 minutes.
+Built to last, enduring over 100,000 cycles, and alerts you to suspicious activities.
+It thrives in all‑weather conditions with an IP54 rating, ensuring reliable operation from -30°F to 55°F.
+Experience the future of home security with ISEFY Sentinel SL100WB — smart, convenient, and simple.
+
+Highlights:
+1. Five Unlocking Methods: Fingerprint, card, password, one‑time password, and mechanical key.
+2. One‑Time Password: Guest use it once, and the effective time can be set.
+3. App Remote Management: User management, door opening record, and real‑time status checks.
+4. Auto‑Lock: Count‑down auto‑lock via app.
+5. Anti‑peep Phantom Password: Supports 6 to 12 digits; up to 10 sets of phantom passwords.
+6. Built to Last: BHMA‑certified, tested for 100,000+ cycles, and alerts you to suspicious activity.
+7. All‑Weather Reliability: IP54 rating; -30°F to 55°F operating range.
+
+Key Specs:
+- Battery: 4×AA, up to 12 months
+- Connectivity: Direct Wi‑Fi (easy setup without bridge)
+- Installation: Fits most US & CA latchsets; approx. 15‑minute installation
+- Durability: 100,000+ cycles tested
+- Weatherproof: IP54
+- Operating Temperature: -30°F to 55°F
+- Alerts: Illegal user forced lock alarm, door lock anomaly alert, low battery warning
+
+Box Content (typical package; may vary by region/bundle):
+- Smart Lock
+- Latch
+- Strike Plate
+- Mounting Hardware
+- Mechanical Keys
+- IC Cards
+
+================================================================================
+PAGE: PRODUCTS LISTING (src/app/products/page.tsx)
+================================================================================
+Hero:
+- Shop ISEFY Products
+- Find the right security device for your home or business—smart tracking, AI detection, and clear video day or night.
+
+Filters (Sidebar):
+- Categories: All Products, Outdoor Cameras, Indoor Cameras, Video Doorbells, Smart Locks
+- Filter by Resolution: 8MP (Dual‑Lens), 2K / 3MP
+- Filter by Features: Wire‑Free, Smart Color Night Vision, Active Deterrence, Privacy Mode, Dual‑Band Wi‑Fi
+
+Sort Options:
+- Featured, New Arrivals, Price: Low to High, Price: High to Low, Top Rated
+
+================================================================================
+PAGE: SOLUTIONS OVERVIEW (src/app/solutions/page.tsx)
+================================================================================
+Hero:
+- Security solutions for every scenario
+- Residential, retail, or SOHO—ISEFY integrates cameras, doorbells, smart locks, and cloud service into one app experience.
+
+Cards:
+1. Residential - Comprehensive protection for your family and property.
+2. Retail - Deter suspicious activity and monitor key zones with smart tracking.
+3. SOHO - Secure your workspace and assets with easy‑to‑manage devices and access control.
+
+Why Choose ISEFY Solutions?
+1. Unified Ecosystem: Integrate all products into a single app for seamless interaction.
+2. Smart Control: Flexible scheduling and customizable device actions.
+3. Quick Setup: DIY‑friendly setup designed to get you protected fast.
+
+================================================================================
+PAGE: SOLUTION DETAILS (src/app/solutions/[type]/page.tsx)
+================================================================================
+Note: Content varies by solution type.
+
+[Residential Home Security]
+Subtitle: Protect what matters most.
+Intro: Whether you live in an apartment or a large home, ISEFY helps you build a complete home protection system.
+
+Pain Points & Solutions:
+- Doorstep Monitoring (Visitors, deliveries, and suspicious lingering.) -> Solution: Pivot Video Doorbell (30° pan + smart tracking + loitering detection)
+- Home Break‑ins (Deterrence & access control.) -> Solution: Sentinel Smart Lock + AlertFlash active deterrence (spotlight + siren + red/blue warning lights)
+- Kid/Pet Safety (Indoor awareness without compromising privacy.) -> Solution: Voyager Indoor Camera (Abnormal Sound Alarm + Privacy Mode)
+
+[Retail Store Security]
+Subtitle: Smart surveillance for smarter business.
+Intro: Protect inventory, monitor operations, and provide visible deterrence for after‑hours peace of mind.
+
+Pain Points & Solutions:
+- Shoplifting (High‑traffic zone monitoring.) -> Solution: Outdoor/indoor cameras with smart tracking + human detection + custom detection regions
+- After‑hours incidents (Proactive deterrence.) -> Solution: Active deterrence (spotlight + siren + warning lights) with detection schedules
+
+[SOHO Office Security]
+Subtitle: Professional security for small offices.
+Intro: Focus on your work while ISEFY keeps your office secure, day and night.
+
+Pain Points & Solutions:
+- Access Control (Managing employee/visitor entry.) -> Solution: Sentinel Smart Lock with user management and access logs
+- After‑hours Monitoring (Alerts only when needed.) -> Solution: Detection schedules + instant motion alerts + cloud playback for remote review
+
+Global CTA: Build Your Bundle
+
+================================================================================
+PAGE: APP (src/app/app/page.tsx)
+================================================================================
+Hero:
+- ISEFY App
+- One app for your cameras, doorbell, smart lock, and cloud service—control and monitor from anywhere.
+Buttons: App Store, Google Play
+
+Benefits & Key Features:
+- Smart Color Night Vision: Four smart night vision modes provide clear full‑color or black‑and‑white pictures even in complete darkness.
+- Advanced AI Human & Vehicle Detection: Proprietary algorithms enhance accuracy, minimize false alerts, and elevate home security.
+- Detection Region: Tap and select grids to set motion detection areas.
+- Full‑duplex Two‑way Talk with Variable Voice: Interact with visitors or dissuade unwelcome people while protecting your privacy.
+- Active Deterrence: When intrusion is detected, the built‑in spotlight turns on and a 110dB siren starts to alert.
+- Smart Control, Fully Customizable Security: Create scenes, set routines, and schedule defense that adapts to your life.
+
+Quick Setup:
+4 Easy Steps to Security — Setup in minutes!
+01 Download App - Get the ISEFY app from the store.
+02 Register - Create your secure account.
+03 Add Device - Scan the QR code on the device.
+04 Connect - Follow in‑app prompts to connect Wi‑Fi.
+
+================================================================================
+PAGE: CLOUD (src/app/cloud/page.tsx)
+================================================================================
+Hero:
+- ISEFY Protect (Cloud)
+- Comprehensive Security Service Plan
+Button: View Plans
+
+Introduction:
+ISEFY Protect is a subscription service that enhances your ISEFY products with advanced cloud computing technology, providing upgraded security features and a smarter, more reliable protection experience.
+
+Why Cloud?
+- Cloud Storage
+- Up to 30 Days Event History
+- Unlimited Storage
+- Smoother Playback
+- Enhanced AI Detection
+- Share devices with up to 20 people for shared notifications, cloud recordings, and device management
+- Download SD Card Recordings Remotely
+- Device Health Guard
+- Security Report
+
+Our Plan:
+- Plan names, pricing, and region availability will be inserted here once finalized.
+
+Voucher Guide (Add cloud plan using a voucher):
+1. Log in to the ISEFY App
+2. Go to the Cloud tab
+3. Enter your voucher code and redeem
+
+================================================================================
+PAGE: SUPPORT (src/app/support/page.tsx)
+================================================================================
+Hero:
+- How can we help you?
+- Placeholder: Search for products or issues...
+
+Categories:
+- FAQ Center: Find answers to common questions about your device.
+- Setup Guides: Step‑by‑step installation instructions and videos.
+- Downloads: User manuals, software, and firmware updates.
+- Warranty & RMA: Check warranty status or submit a return request.
+- Contact Us: Get in touch with our technical support team.
+
+Popular Topics:
+Pivot Wi‑Fi connection, reset camera, SD card formatting, cloud subscription, share device
+
+Support Email:
+support@isefy.com
+
+================================================================================
+PAGE: SHOP (src/app/shop/page.tsx)
+================================================================================
+Hero:
+- Limited Time Offer
+- Seasonal Sale
+- Highlight curated deals and security bundles with clear CTAs.
+Button: Shop Now
+
+Shop by Category:
+- Outdoor, Indoor, Doorbells, Smart Locks, Accessories
+
+Best Sellers:
+- (Displays products dynamically)
+
+================================================================================
+PAGE: PARTNERS (src/app/partners/page.tsx)
+================================================================================
+Hero:
+- Build with ISEFY
+- Whether you are a developer, distributor, or installer, join our ecosystem to create value together.
+Buttons: Open Platform, Become a Partner
+
+Open Platform:
+- ISEFY Open Platform
+- Integration for your business and your home with ISEFY solutions.
+- Capabilities: REST (HTTP) API, SDK API, App/Client SDK, Web Service
+Button: Read Documentation
+
+Become a Distributor:
+- Become a Distributor
+- Grow your business with ISEFY's competitive pricing and marketing support.
+Button: Contact Sales
+
+Sales Contact:
+sales@isefy.com
+
+================================================================================
+PAGE: ABOUT (src/app/about/page.tsx)
+================================================================================
+Hero:
+- About ISEFY
+- Welcome to ISEFY Technologies LTD, your innovative partner in home security technology.
+
+Company Story:
+Founded in 2024 in Toronto, Canada, we are committed to enhancing the safety and peace of your home with our state‑of‑the‑art products.
+At ISEFY, we understand the importance of reliable and accessible security solutions. That’s why we’ve launched with a diverse range of products designed to meet various security needs.
+As we grow, we are excited to expand our product offerings, continuously working on innovative solutions to keep your homes and businesses secure.
+
+Contact Us:
+- General Inquiries: info@isefy.com
+- Sales: sales@isefy.com
+- Technical Support: support@isefy.com
+- Headquarters: Toronto, Canada
+- Website: www.isefy.com
+
+Form Fields:
+- First Name, Last Name, Email Address, Subject (Sales / Support / Partnership), Message
+
+================================================================================
+PAGE: LEGAL (Generic Template)
+================================================================================
+Titles supported: Privacy Policy, Terms of Use, Refund Policy
+Intro:
+This is a placeholder for the [Title]. Full legal text regarding [Title] for ISEFY Technologies LTD. will be inserted here.
+
+Content Headings:
+1. Introduction
+2. Data Collection
+3. Contact

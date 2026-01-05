@@ -1,0 +1,417 @@
+ISEFY Website Content - Proofreading Document
+Date: 2025-12-17
+--------------------------------------------------------------------------------
+
+================================================================================
+GLOBAL NAVIGATION (Navbar & Footer)
+================================================================================
+
+[Navbar]
+Menu Items:
+- Products
+- Solutions
+- App
+- Cloud
+- Support
+- Shop (Button)
+
+[Footer]
+Slogan:
+让专业安防不再只属于大企业，
+而是每一户普通家庭。
+
+Links Group - Products:
+- Outdoor Cameras
+- Indoor Cameras
+- Video Doorbells
+- Smart Locks
+- Accessories
+
+Links Group - Support:
+- Help Center
+- Setup Guides
+- Downloads
+- Warranty & RMA
+- Contact Us
+
+Links Group - Services:
+- ISEFY Cloud
+- ISEFY App
+- Open Platform
+- Become a Partner
+
+Links Group - About:
+- About Us
+- Newsroom
+- Privacy Policy
+- Terms of Use
+
+Copyright:
+© 2025 ISEFY Security. All Rights Reserved.
+Toronto, Canada
+
+================================================================================
+PAGE: HOMEPAGE (src/app/page.tsx)
+================================================================================
+
+[Hero Section]
+Title: ISEFY：一套系统，守护你的整个家
+Subtitle: 室内室外摄像机、门铃、智能门锁与云服务，全部在一套 App 里统一管理。Complete Home Protection.
+Buttons:
+- 浏览产品 (Products)
+- 探索方案 (Solutions)
+
+[Product Line Overview]
+Heading: 全面覆盖的安防产品线
+Subheading: 满足从门控到全屋监控的所有需求
+
+Card 1: Network Cameras
+- Indoor & Outdoor options with AI detection.
+- Link: View Collection
+
+Card 2: Video Doorbell – Pivot
+- See who's there, from anywhere.
+- Link: Learn More
+
+Card 3: Smart Lock – Sentinel
+- Keyless entry tailored to your life.
+- Link: Learn More
+
+[Scenario Cards]
+Heading: 您的场景，我们的方案
+- Residential Home (家庭安防)
+- Retail Stores (零售店铺)
+- SOHO Office (小型办公)
+
+[Core Capabilities]
+- Smart Color Night Vision (四模式夜视)
+- AI Human & Vehicle (精准识别)
+- Active Deterrence (声光主动防御)
+- Two-way Talk (双向变声对讲)
+Button: 了解更多功能
+
+[Ecosystem Section]
+Heading: Complete Home Protection
+Description: 构建一个无缝的安防生态。所有设备协同工作，为您提供全方位的安全保障。
+Button: 探索完整解决方案
+
+[Cloud Services Section]
+Heading: ISEFY Cloud 服务
+Features:
+- Up to 30 Days Event History
+- Unlimited Storage Space
+- Remote SD Card Download
+- Device Health Guard
+- Security Report
+- Up to 20 Users Sharing
+Button: 查看订阅详情
+
+[Trust/Footer]
+Trusted by Homes & Businesses
+ISEFY Technology LTD. Toronto, 2024
+
+================================================================================
+PRODUCT DATA (src/data/products.ts)
+================================================================================
+Note: These are the details used on Product Listing and Detail pages.
+
+----------------------------------------
+Product 1: DualWatch Outdoor Camera
+Tagline: Two Lenses. Zero Blind Spots.
+Description: 8MP Dual-Lens PTZ Camera with Auto-Tracking and Color Night Vision.
+Long Description: DualWatch revolutionizes outdoor security with its unique dual-lens design. One fixed lens keeps an eye on the overall area, while the PTZ lens tracks moving objects in high detail. With 8MP total resolution, you never miss a thing.
+
+Highlights:
+1. 8MP Dual-Lens: See both the big picture and the details.
+2. 360° Tracking: AI automatically tracks moving subjects.
+3. Color Night Vision: True color even in pitch darkness.
+4. Active Deterrence: Siren and spotlight warn off intruders.
+
+Specs:
+- Resolution: 3MP Fixed + 5MP PTZ
+- Field of View: 360° Pan, 90° Tilt
+- Connectivity: 2.4/5 GHz WiFi 6
+- Power: DC 12V
+- Weatherproof: IP66
+
+Box Content: DualWatch Camera, Power Adapter, Mounting Template, Screw Pack, Waterproof Connector, Quick Start Guide
+FAQ 1: Does DualWatch support 5GHz WiFi? -> Yes, DualWatch supports both 2.4GHz and 5GHz WiFi 6 for stable connection.
+FAQ 2: Can it record 24/7? -> Yes, if you use a microSD card or NVR, it supports continuous recording.
+
+----------------------------------------
+Product 2: AlertFlash Active Deterrence
+Tagline: Stop Crime Before It Happens.
+Description: Active deterrence camera with red/blue strobes and 110dB siren.
+Long Description: AlertFlash is not just a camera; it is a guard. With active visual and audio deterrents, it prevents potential crimes effectively.
+
+Highlights:
+1. Red & Blue Strobe: Police-style flashing lights to deter.
+2. 110dB Siren: Loud alarm triggered by motion.
+
+Specs:
+- Resolution: 5MP
+- Field of View: 110°
+- Connectivity: 2.4/5 GHz WiFi 6
+
+Box Content: AlertFlash Camera, Power Cable, Mounting Kit, Manual
+FAQ 1: Is the siren adjustable? -> Yes, you can adjust the volume or turn it off via the app.
+
+----------------------------------------
+Product 3: GuardianEye PTZ
+Tagline: See Everything, Miss Nothing.
+Description: 360° coverage weatherproof PTZ camera for total home security.
+Long Description: GuardianEye provides affordable 360-degree protection with reliable PTZ mechanics and clear 3MP video.
+
+Highlights:
+1. 360° Pan/Tilt: Full coverage of your yard.
+2. IP66 Weatherproof: Built for rain and snow.
+
+Specs:
+- Resolution: 3MP
+- Field of View: 360°
+- Connectivity: 2.4 GHz WiFi
+
+Box Content: GuardianEye Camera, Power Adapter, Screw Pack, Manual
+FAQ 1: Does it work with Alexa? -> Yes, it is compatible with Alexa and Google Assistant.
+
+----------------------------------------
+Product 4: Voyager Indoor PT
+Tagline: Your Smart Home Observer.
+Description: Smart indoor pan/tilt camera with privacy mode and baby crying detection.
+Long Description: Perfect for pet owners and parents, Voyager keeps you connected to your home with smart audio detection and interaction.
+
+Highlights:
+1. Baby Crying Detect: Instant alerts when baby cries.
+2. Privacy Mode: Lens hides away when you are home.
+
+Specs:
+- Resolution: 3MP
+- Field of View: 360°
+- Connectivity: 2.4 GHz WiFi
+
+Box Content: Voyager Camera, USB Cable, Power Adapter, Mounting Plate, Manual
+FAQ 1: Can I mount it on the ceiling? -> Yes, it comes with a mounting plate and supports image flip.
+
+----------------------------------------
+Product 5: Pivot Video Doorbell
+Tagline: Answer Your Door, Anywhere.
+Description: Battery video doorbell with wide angle view and package detection.
+Long Description: Pivot combines a high-def camera with a smart doorbell. It includes a Chime that also acts as a WiFi extender.
+
+Highlights:
+1. 2K Resolution: Crisp video to see every detail.
+2. Battery Powered: Easy installation without wires.
+3. Package Detection: Know when deliveries arrive.
+
+Specs:
+- Resolution: 2K 3MP
+- Field of View: 160°
+- Battery: 5200mAh
+- Connectivity: 2.4 GHz WiFi
+
+Box Content: Pivot Doorbell, Chime (WiFi Extender), Battery Pack, Mounting Wedge, Screw Pack, Manual
+FAQ 1: How long does the battery last? -> Up to 180 days based on typical usage.
+
+----------------------------------------
+Product 6: Sentinel Smart Lock
+Tagline: Keyless Freedom. Total Security.
+Description: 5-in-1 keyless entry smart lock with fingerprint and app control.
+Long Description: Sentinel brings modern convenience to your front door. Never worry about losing keys again.
+
+Highlights:
+1. 5 Unlocking Ways: Fingerprint, Code, App, Card, Key.
+2. Remote Control: Manage access from anywhere.
+
+Specs:
+- Battery: 12 Months
+- Connectivity: Bluetooth / WiFi Bridge
+
+Box Content: Sentinel Lock, Latch, Strike Plate, Mounting Hardware, 2 Physical Keys, 2 IC Cards
+FAQ 1: Is it waterproof? -> Yes, the exterior part is IP65 rated.
+
+================================================================================
+PAGE: PRODUCTS LISTING (src/app/products/page.tsx)
+================================================================================
+Hero:
+- Shop ISEFY Products
+- Find the perfect security solution for your home. Advanced AI, crystal clear video, and reliable protection.
+
+Filters (Sidebar):
+- Categories: All Products, Outdoor Cameras, Indoor Cameras, Video Doorbells, Smart Locks
+- Filter By Resolution: 4K / 8MP, 2K / 5MP, 1080p / 3MP
+- Filter By Features: Battery Powered, Color Night Vision
+
+Sort Options:
+- Featured, New Arrivals, Price: Low to High, Price: High to Low, Top Rated
+
+================================================================================
+PAGE: SOLUTIONS OVERVIEW (src/app/solutions/page.tsx)
+================================================================================
+Hero:
+- Security Solutions tailored to you
+- From cozy apartments to bustling retail stores, ISEFY provides professional-grade protection for every scenario.
+
+Cards:
+1. Residential Home - Comprehensive protection for your family and property.
+2. Retail Store - Prevent theft and manage your business efficiently.
+3. SOHO Office - Secure your workspace and assets with ease.
+
+Why Choose ISEFY Solutions?
+1. Unified Ecosystem: One app controls cameras, locks, doorbell, and cloud.
+2. Cost-Effective: Professional features without the professional price tag.
+3. Easy DIY Installation: No monthly fees for basic use. No drilled holes for some devices.
+
+================================================================================
+PAGE: SOLUTION DETAILS (src/app/solutions/[type]/page.tsx)
+================================================================================
+Note: Content varies by solution type.
+
+[Residential Home Security]
+Subtitle: Protect what matters most.
+Intro: Whether you live in an apartment or a large estate, ISEFY has a solution tailored for your home needs.
+Pain Points & Solutions:
+- Package Theft (Porch pirates taking deliveries.) -> Solution: Pivot Video Doorbell with Package Detection
+- Home Break-ins (Unauthorized entry while away.) -> Solution: Sentinel Lock + AlertFlash active deterrence
+- Kid/Pet Safety (Keeping an eye on family members.) -> Solution: Voyager Indoor Camera with Crying Detect
+
+[Retail Store Security]
+Subtitle: Smart surveillance for smarter business.
+Intro: Protect your inventory, monitor staff workflow, and ensure customer safety with 24/7 monitoring.
+Pain Points & Solutions:
+- Shoplifting (Inventory shrinkage from theft.) -> Solution: High-res 5MP cameras at aisles
+- Disputes (Customer transaction disputes.) -> Solution: Audio recording at checkout counters
+
+[SOHO Office Security]
+Subtitle: Professional security for small offices.
+Intro: Focus on your work while ISEFY keeps your office secure, day and night.
+Pain Points & Solutions:
+- Access Control (Managing employee entry.) -> Solution: Sentinel Smart Lock
+- After-hours (Security when office is empty.) -> Solution: AlertFlash with Schedule Mode
+
+Global CTA: Customize Your Bundle
+
+================================================================================
+PAGE: APP (src/app/app/page.tsx)
+================================================================================
+Hero:
+- ISEFY App
+- One app to rule them all. Control your cameras, doorbell, and locks from anywhere.
+Buttons: App Store, Google Play
+
+Features:
+- Live View: Check in on home anytime with crystal clear video.
+- Instant Alerts: Get notified immediately when motion is detected.
+- Event Playback: Review what happened with cloud or SD card history.
+- Two-Way Audio: Talk to visitors through your camera or doorbell.
+- Device Sharing: Share access with family members easily.
+- Privacy Mode: One tap to sleep cameras when you arrive home.
+
+4 Steps to Setup:
+01 Download App - Get ISEFY App from store.
+02 Register - Create your secure account.
+03 Add Device - Scan QR code on the device.
+04 Connect - Follow voice prompts to connect WiFi.
+
+================================================================================
+PAGE: CLOUD (src/app/cloud/page.tsx)
+================================================================================
+Hero:
+- ISEFY Protect
+- Secure your memories with encrypted cloud storage. Never worry about losing footage if your camera is stolen.
+Button: View Plans
+
+Why Cloud?
+- No SD Card Needed
+- Unlimited Storage Space
+- Encrypted & Secure
+- AI Analysis Reports
+
+Plans:
+1. Basic Plan
+   - $2.99 /mo/cam
+   - 7 Days Event History, 1 Camera Supported, Rich Notifications
+
+2. Plus Plan (Most Popular)
+   - $9.99 /mo/account
+   - Up to 5 Cameras, 30 Days Event History, Intelligent AI Alerts, Device Health Monitor
+
+Voucher Guide:
+Have a Voucher Code?
+1. Log in to App -> 2. Go to Cloud Tab -> 3. Enter Code & Redeem
+
+================================================================================
+PAGE: SUPPORT (src/app/support/page.tsx)
+================================================================================
+Hero:
+- How can we help you?
+- Placeholder: Search for products or issues...
+
+Categories:
+- FAQ Center: Find answers to common questions about your device.
+- Setup Guides: Step-by-step installation instructions and videos.
+- Downloads: User manuals, software, and firmware updates.
+- Warranty & RMA: Check warranty status or submit a return request.
+- Contact Us: Get in touch with our technical support team.
+
+Popular Topics:
+Pivot WiFi Connection, Reset Camera, SD Card Formatting, Cloud Subscription, Share Device
+
+================================================================================
+PAGE: SHOP (src/app/shop/page.tsx)
+================================================================================
+Hero:
+- Limited Time Offer
+- Spring Sale is Live
+- Up to 30% off on Security Kits.
+Button: Shop Now
+
+Shop by Category:
+- Outdoor, Indoor, Doorbells, Smart Locks, Accessories
+
+Best Sellers:
+- (Displays products dynamically)
+
+================================================================================
+PAGE: PARTNERS (src/app/partners/page.tsx)
+================================================================================
+Hero:
+- Build with ISEFY
+- Whether you are a developer, distributor, or installer, join our ecosystem to create value together.
+Buttons: Open Platform, Become a Partner
+
+Open Platform:
+- ISEFY Open Platform
+- Integrate ISEFY devices into your own applications with our robust SDKs and APIs.
+- Features: RESTful API & HTTP Hooks, Mobile SDK (iOS / Android), Cloud Event Streaming.
+Button: Read Documentation
+
+Become a Distributor:
+- Become a Distributor
+- Grow your business with ISEFY's competitive pricing and marketing support.
+Button: Contact Sales
+
+================================================================================
+PAGE: ABOUT (src/app/about/page.tsx)
+================================================================================
+Hero:
+- About ISEFY
+- ISEFY Technologies LTD. was founded in 2024 in Toronto with a simple mission: to make professional-grade home security accessible to everyone. We believe that safety should not be complicated or expensive.
+
+Contact Us:
+- General Inquiries: info@isefy.com
+- Sales & Distribution: sales@isefy.com
+- Technical Support: support@isefy.com
+- Headquarters: ISEFY Technologies LTD., 123 Innovation Dr, Toronto, ON, Canada
+
+Form Fields:
+- First Name, Last Name, Email Address, Subject (Sales/Support/Partnership), Message.
+
+================================================================================
+PAGE: LEGAL (Generic Template)
+================================================================================
+Titles supported: Privacy Policy, Terms of Use, Refund Policy
+Intro: This is a placeholder for the [Title]. Full legal text regarding [title] for ISEFY Technologies LTD. will be inserted here.
+Content Headings:
+1. Introduction
+2. Data Collection
+3. Contact

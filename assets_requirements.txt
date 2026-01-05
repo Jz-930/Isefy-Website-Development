@@ -1,0 +1,125 @@
+ISEFY Website Asset Requirements List (Detailed)
+==============================================
+Project Name: ISEFY Security Products Website
+Design Theme: High-Tech, Trusted, Modern, Clean.
+Brand Colors (Reference):
+- Primary Blue: #0D47A1
+- Dark Blue: #002171
+- Primary Purple: #7B1FA2
+- Accent Cyan: #00E5FF
+
+Instructions for Design Team:
+- All images should be optimized for web (72 DPI).
+- Please strictly adhere to the suggested dimensions/ratios to fit the coded layout.
+- "Safe Area": Ensure main subject is centered for responsive cropping.
+
+1. Brand Assets
+---------------
+[ ] **Logo**
+    - **Format**: PNG (Transparent Background) or SVG (Vector preferred)
+    - **Dimensions**: Min height 100px.
+    - **Variations**: 
+        1. Full Color (Dark Text) for white backgrounds.
+        2. All White (Light Text) for dark/footer backgrounds.
+
+2. Home Page Assets
+-------------------
+[ ] **Hero Section Background**
+    - **Context**: Main landing banner, behind text "Complete Home Protection".
+    - **Dimensions**: 1920 x 1080 px (16:9 Aspect Ratio).
+    - **Style**: Dark, atmospheric, high-tech. Abstract pattern or subtle smart city/home environment.
+    - **Note**: Image will be overlaid with a dark blue opacity layer (60-80%), so high contrast elements work best.
+
+[ ] **Ecosystem Section Background**
+    - **Context**: Mid-page section "Complete Home Protection".
+    - **Dimensions**: 1920 x 1080 px (16:9 Aspect Ratio).
+    - **Style**: Abstract connectivity, digital waves, or network nodes. Dark tech theme.
+
+[ ] **Core Capabilities Feature Image**
+    - **Context**: "Core Capabilities" section, side-by-side with feature list.
+    - **Dimensions**: 1200 x 1200 px (1:1 Square Aspect Ratio).
+    - **Style**: High-tech close-up of a camera lens, chip, or AI visualization. Clean and futuristic.
+
+[ ] **Cloud Services Image**
+    - **Context**: "ISEFY Protect" Cloud section.
+    - **Dimensions**: 800 x 600 px (4:3 Aspect Ratio).
+    - **Style**: Illustration or photo representing cloud security, data shield, or mobile app data view. Light/Clean theme (white/blue background).
+
+3. Solution Scenarios (Vertical Cards)
+--------------------------------------
+*These images represent the use-cases. Used in 3:4 vertical cards.*
+
+[ ] **Residential Home Scenario**
+    - **Dimensions**: 900 x 1200 px (3:4 Aspect Ratio).
+    - **Subject**: Modern home exterior or happy family in living room. Warm, safe atmosphere.
+    
+[ ] **Retail Store Scenario**
+    - **Dimensions**: 900 x 1200 px (3:4 Aspect Ratio).
+    - **Subject**: Retail shop interior, cashier counter, or boutique. Bright and organized.
+    
+[ ] **SOHO Office Scenario**
+    - **Dimensions**: 900 x 1200 px (3:4 Aspect Ratio).
+    - **Subject**: Small creative office, home office desk, freelancer setup. Professional and minimal.
+
+4. Product Images (For Product Cards & Details)
+-----------------------------------------------
+*Used in 4:3 cards. Transparent background (PNG) is highly recommended for versatility, otherwise white background.*
+
+[ ] **Outdoor Camera (DualWatch - Dual Lens)**
+    - **Dimensions**: 1200 x 900 px (4:3 Ratio).
+    - **Format**: PNG (Transparent) or JPG (White Background).
+    - **Usage**: Main product card and product page gallery.
+    
+[ ] **Active Deterrence Camera (AlertFlash)**
+    - **Dimensions**: 1200 x 900 px (4:3 Ratio).
+    - **Format**: PNG/JPG.
+    - **Note**: Distinctive red/blue strobe light feature should be visible/hinted if possible.
+    
+[ ] **PTZ Outdoor Camera (GuardianEye)**
+    - **Dimensions**: 1200 x 900 px (4:3 Ratio).
+    - **Format**: PNG/JPG.
+    
+[ ] **Indoor Camera (Voyager)**
+    - **Dimensions**: 1200 x 900 px (4:3 Ratio).
+    - **Format**: PNG/JPG.
+    - **Note**: Small, cute, distinct round shape.
+    
+[ ] **Video Doorbell (Pivot)**
+    - **Dimensions**: 1200 x 900 px (4:3 Ratio).
+    - **Format**: PNG/JPG.
+    
+[ ] **Smart Lock (Sentinel)**
+    - **Dimensions**: 1200 x 900 px (4:3 Ratio).
+    - **Format**: PNG/JPG.
+
+5. App Page
+-----------
+[ ] **App Interface Screen (Home/Dashboard)**
+    - **Context**: Placed inside a phone frame on the "ISEFY App" page.
+    - **Dimensions**: 1170 x 2532 px (iPhone 13/14 Pro Max resolution, approx 9:19.5 ratio).
+    - **Content**: High-fidelity UI mockup of the app dashboard showing camera feeds and lock status. Dark mode UI preferred for "Premium" feel.
+
+6. Shop Page
+------------
+[ ] **Shop Hero Banner**
+    - **Context**: Top banner of the Shop page.
+    - **Dimensions**: 1920 x 600 px (Wide Banner ratio approx 3:1).
+    - **Style**: Promotional, energetic. "Sale", "New Arrival" or "Shop Now" vibes. Tech blue/cyan theme.
+
+7. About Section
+----------------
+[ ] **About Hero Background**
+    - **Dimensions**: 1920 x 1080 px (16:9).
+    - **Style**: Corporate, professional, Toronto skyline or high-tech office building. Dark/Overlay style.
+
+[ ] **Mission Image**
+    - **Dimensions**: 1000 x 1000 px (1:1 Square).
+    - **Style**: Team meeting, engineers working, or branding shot.
+
+[ ] **Newsroom Cover Image**
+    - **Dimensions**: 1200 x 600 px (2:1 Wide).
+    - **Style**: Press related, microphone, or abstract geometric news theme.
+
+[ ] **Privacy Policy Cover Image**
+    - **Dimensions**: 1200 x 600 px (2:1 Wide).
+    - **Style**: Lock icon, shield, digital security abstract.
