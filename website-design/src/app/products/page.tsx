@@ -15,15 +15,29 @@ export default function ProductsPage() {
 
     return (
         <div className="min-h-screen bg-gray-50">
-            {/* Header */}
-            <div className="bg-white border-b border-gray-border">
-                <div className="container-custom py-16 text-center">
-                    <h1 className="text-4xl font-bold mb-4 text-gray-main">Shop ISEFY Products</h1>
-                    <p className="text-gray-text max-w-2xl mx-auto text-lg">
+            {/* Hero Section */}
+            <section className="relative py-24 md:py-32 flex items-center justify-center bg-black overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/hero2.jpg"
+                        alt="Products Hero"
+                        fill
+                        className="object-cover opacity-80"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+                </div>
+
+                <div className="container-custom relative z-10 text-center">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-xl tracking-tight">
+                        Shop ISEFY Products
+                    </h1>
+                    <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md">
                         Find the right security device for your home or business—smart tracking, AI detection, and clear video day or night.
                     </p>
                 </div>
-            </div>
+            </section>
 
             <div className="container-custom py-12">
                 <div className="flex flex-col lg:flex-row gap-8">

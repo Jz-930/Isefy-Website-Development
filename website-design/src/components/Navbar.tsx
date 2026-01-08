@@ -10,22 +10,17 @@ const MENU_CONTENT = {
         {
             category: 'Cameras',
             items: [
-                { name: 'DualWatch Outdoor Camera', image: '/images/product-cameras.png', tag: 'NEW', href: '/products?cat=outdoor' },
-                { name: 'AlertFlash Active Deterrence', image: '/images/product-cameras.png', tag: 'BEST', href: '/products?cat=active' },
-                { name: 'GuardianEye PTZ', image: '/images/product-cameras.png', tag: 'NEW', href: '/products?cat=ptz' }
+                { name: 'DualWatch Outdoor', image: '/images/product-cameras.png', tag: 'NEW', href: '/products/dualwatch-outdoor-camera' },
+                { name: 'AlertFlash Deterrence', image: '/images/product-cameras.png', tag: 'BEST', href: '/products/alertflash-active-deterrence' },
+                { name: 'GuardianEye PTZ', image: '/images/product-cameras.png', href: '/products/guardianeye-ptz' },
+                { name: 'Voyager Indoor', image: '/images/product-cameras.png', href: '/products/voyager-indoor-pt' }
             ]
         },
         {
-            category: 'Doorbells',
+            category: 'Doorbells & Locks',
             items: [
-                { name: 'Video Doorbell 2K', image: '/images/product-doorbell.png', href: '/products/pivot' },
-                { name: 'Video Doorbell HD', image: '/images/product-doorbell.png', href: '/products/pivot' }
-            ]
-        },
-        {
-            category: 'Smart Locks',
-            items: [
-                { name: 'Sentinel Smart Lock', image: '/images/product-lock.png', tag: 'NEW', href: '/products/sentinel' }
+                { name: 'Pivot Video Doorbell', image: '/images/product-doorbell.png', tag: '2K', href: '/products/pivot-video-doorbell' },
+                { name: 'Sentinel Smart Lock', image: '/images/product-lock.png', tag: 'NEW', href: '/products/sentinel-smart-lock' }
             ]
         }
     ],
