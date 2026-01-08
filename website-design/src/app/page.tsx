@@ -1,25 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import StarBackground from '../components/StarBackground';
-import { MaskContainer } from '../components/ui/svg-mask-effect';
+import HeroSlider from '../components/HeroSlider';
 
 export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-isefy-dark-blue overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero.jpg"
-            alt="Hero Background"
-            fill
-            className="object-cover opacity-40 mix-blend-overlay"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40"></div>
-          {/* Star Effect */}
-          <StarBackground />
-        </div>
+      <section className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
+        <HeroSlider />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6 drop-shadow-lg">
             Complete Home Protection<br />by <span className="text-accent">ISEFY</span>
@@ -85,30 +73,15 @@ export default function Home() {
       </section>
 
       {/* Product Line Overview */}
-      <section className="relative py-24 overflow-hidden bg-slate-900">
-        <div className="absolute inset-0 z-0">
-          <MaskContainer
-            revealText={
-              <div className="flex flex-col items-center justify-center h-full w-full text-slate-800 opacity-20">
-                <p className="text-9xl font-bold uppercase tracking-widest text-center">Security</p>
-              </div>
-            }
-            className="h-full w-full bg-slate-900"
-          >
-            <div className="flex flex-col items-center justify-center h-full w-full text-isefy-blue">
-              <p className="text-9xl font-bold uppercase tracking-widest text-center">ISEFY</p>
-            </div>
-          </MaskContainer>
-        </div>
-
-        <div className="container-custom relative z-10 pointer-events-none">
-          <div className="text-center mb-16 pointer-events-auto">
+      <section className="py-24 bg-slate-900">
+        <div className="container-custom">
+          <div className="text-center mb-16">
             <h2 className="section-title text-4xl font-bold text-white mb-4">Product Line</h2>
             <p className="section-subtitle text-gray-400 text-lg">Network Cameras (Indoor / Outdoor) • Video Doorbell • Smart Lock</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 pointer-events-auto">
+            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
               {/* ... Content of Card 1 ... */}
               <div className="aspect-[4/3] relative overflow-hidden bg-gray-200">
                 <Image
@@ -130,7 +103,7 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 pointer-events-auto">
+            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] relative overflow-hidden bg-gray-200">
                 <Image
                   src="/images/product-doorbell.png"
@@ -151,7 +124,7 @@ export default function Home() {
             </div>
 
             {/* Card 3 */}
-            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 pointer-events-auto">
+            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] relative overflow-hidden bg-gray-200">
                 <Image
                   src="/images/product-lock.png"
