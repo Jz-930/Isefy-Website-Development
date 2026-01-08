@@ -40,7 +40,6 @@ export default function Footer() {
                         <h4 className="text-white mb-3 text-base font-semibold">Services</h4>
                         <Link href="/cloud" className="hover:text-white hover:underline text-sm">ISEFY Protect (Cloud)</Link>
                         <Link href="/app" className="hover:text-white hover:underline text-sm">ISEFY App</Link>
-                        <Link href="/partners" className="hover:text-white hover:underline text-sm">Open Platform</Link>
                         <Link href="/partners" className="hover:text-white hover:underline text-sm">Become a Partner</Link>
                     </div>
 

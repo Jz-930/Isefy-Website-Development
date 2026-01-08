@@ -22,8 +22,33 @@ export default function PartnersPage() {
                 </div>
             </section>
 
+            {/* Become a Distributor */}
+            <section id="distributor" className="py-24 bg-white">
+                <div className="container-custom text-center">
+                    <h2 className="section-title mb-8">Become a Distributor</h2>
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
+                        Grow your business with ISEFY's competitive pricing, marketing support, and reliable supply chain.
+                    </p>
+
+                    <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 className="text-xl font-bold text-slate-800 mb-6">Contact Sales Team</h3>
+                        <div className="flex items-center justify-center space-x-3 mb-8">
+                            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                                <i className="fas fa-envelope"></i>
+                            </div>
+                            <a href="mailto:sales@isefy.com" className="text-2xl font-bold text-blue-600 hover:text-blue-700">
+                                sales@isefy.com
+                            </a>
+                        </div>
+                        <button className="w-full btn-primary">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+
             {/* Open Platform */}
-            <section id="open-platform" className="py-24 bg-white">
+            <section id="open-platform" className="py-24 bg-gray-50">
                 <div className="container-custom">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                         <div>
@@ -59,31 +84,6 @@ export default function PartnersPage() {
                             </div>
                             <p><span className="text-yellow-400">{'}'}</span></p>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Become a Distributor */}
-            <section id="distributor" className="py-24 bg-gray-50">
-                <div className="container-custom text-center">
-                    <h2 className="section-title mb-8">Become a Distributor</h2>
-                    <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
-                        Grow your business with ISEFY's competitive pricing, marketing support, and reliable supply chain.
-                    </p>
-
-                    <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
-                        <h3 className="text-xl font-bold text-slate-800 mb-6">Contact Sales Team</h3>
-                        <div className="flex items-center justify-center space-x-3 mb-8">
-                            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
-                                <i className="fas fa-envelope"></i>
-                            </div>
-                            <a href="mailto:sales@isefy.com" className="text-2xl font-bold text-blue-600 hover:text-blue-700">
-                                sales@isefy.com
-                            </a>
-                        </div>
-                        <button className="w-full btn-primary">
-                            Apply Now
-                        </button>
                     </div>
                 </div>
             </section>

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import HeroSlider from '../components/HeroSlider';
+import ProductLineCards from '../components/ProductLineCards';
+import PromotionSection from '../components/PromotionSection';
 
 export default function Home() {
   return (
@@ -28,49 +30,8 @@ export default function Home() {
 
 
 
-      {/* Scenario Cards */}
-      <section className="py-24 bg-gray-light">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="section-title text-3xl font-bold text-gray-main">Product Platform Applications</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link href="/solutions/residential" className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-lg">
-              <Image
-                src="/images/scenario-residential.png"
-                alt="Residential"
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
-                <h3 className="text-2xl font-bold text-white group-hover:text-accent transition-colors">Residential</h3>
-              </div>
-            </Link>
-            <Link href="/solutions/retail" className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-lg">
-              <Image
-                src="/images/scenario-retail.png"
-                alt="Retail"
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
-                <h3 className="text-2xl font-bold text-white group-hover:text-accent transition-colors">Retail</h3>
-              </div>
-            </Link>
-            <Link href="/solutions/soho" className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-lg">
-              <Image
-                src="/images/scenario-soho.png"
-                alt="SOHO"
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
-                <h3 className="text-2xl font-bold text-white group-hover:text-accent transition-colors">SOHO</h3>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Seasonal Promotions */}
+      <PromotionSection />
 
       {/* Product Line Overview */}
       <section className="py-24 bg-slate-900">
@@ -79,110 +40,136 @@ export default function Home() {
             <h2 className="section-title text-4xl font-bold text-white mb-4">Product Line</h2>
             <p className="section-subtitle text-gray-400 text-lg">Network Cameras (Indoor / Outdoor) • Video Doorbell • Smart Lock</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-              {/* ... Content of Card 1 ... */}
-              <div className="aspect-[4/3] relative overflow-hidden bg-gray-200">
-                <Image
-                  src="/images/product-cameras.png"
-                  alt="Network Cameras"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-3 text-gray-main group-hover:text-isefy-purple transition-colors">Network Cameras</h3>
-                <p className="text-gray-text mb-6 leading-relaxed">
-                  Smart Tracking, Active Deterrence, Smart Color Night Vision, and AI detection help you stay protected day and night.
-                </p>
-                <Link href="/products?category=Outdoor" className="inline-flex items-center font-semibold text-isefy-blue hover:text-isefy-dark-blue transition-colors">
-                  View Collection <i className="fas fa-arrow-right ml-2 text-sm"></i>
-                </Link>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] relative overflow-hidden bg-gray-200">
-                <Image
-                  src="/images/product-doorbell.png"
-                  alt="Video Doorbell Pivot"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-3 text-gray-main group-hover:text-isefy-purple transition-colors">Video Doorbell – Pivot</h3>
-                <p className="text-gray-text mb-6 leading-relaxed">
-                  30° pan lens + smart tracking, PIR + AI human & loitering detection, and a chime that works as a Wi‑Fi extender.
-                </p>
-                <Link href="/products/pivot-video-doorbell" className="inline-flex items-center font-semibold text-isefy-blue hover:text-isefy-dark-blue transition-colors">
-                  Learn More <i className="fas fa-arrow-right ml-2 text-sm"></i>
-                </Link>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="group bg-white rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] relative overflow-hidden bg-gray-200">
-                <Image
-                  src="/images/product-lock.png"
-                  alt="Smart Lock Sentinel"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-3 text-gray-main group-hover:text-isefy-purple transition-colors">Smart Lock – Sentinel</h3>
-                <p className="text-gray-text mb-6 leading-relaxed">
-                  Unlock in seconds with instant biometrics, and manage access through a Wi‑Fi enabled mobile app with real‑time alerts.
-                </p>
-                <Link href="/products/sentinel-smart-lock" className="inline-flex items-center font-semibold text-isefy-blue hover:text-isefy-dark-blue transition-colors">
-                  Learn More <i className="fas fa-arrow-right ml-2 text-sm"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProductLineCards />
         </div>
       </section>
 
       {/* Core Capabilities */}
-      <section className="py-24 bg-white">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="section-title text-left mb-8 text-4xl font-bold text-gray-main">Core Capabilities</h2>
-              <ul className="space-y-6">
-                {[
-                  'Smart Color Night Vision (four night vision modes)',
-                  'Advanced AI Human & Vehicle Detection',
-                  'Detection Region (custom motion zones)',
-                  'Full‑duplex Two‑way Talk with Variable Voice',
-                  'Active Deterrence (spotlight + siren)',
-                  'Smart Control, Fully Customizable Security'
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start space-x-3 group">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-isefy-blue/10 flex items-center justify-center mt-0.5 group-hover:bg-isefy-blue/20 transition-colors">
-                      <i className="fas fa-check text-isefy-blue text-xs"></i>
-                    </div>
-                    <span className="text-lg text-gray-main font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-10">
-                <Link href="/products" className="btn-primary">
-                  Explore Key Features
-                </Link>
+      <section className="py-24 bg-slate-50 relative overflow-hidden">
+        {/* Background Decorative Elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+          <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-3xl opacity-60"></div>
+          <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-purple-100/50 rounded-full blur-3xl opacity-60"></div>
+        </div>
+
+        <div className="container-custom relative z-10">
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <span className="text-isefy-blue font-bold tracking-widest uppercase text-sm mb-3 block">Premium Security</span>
+            <h2 className="section-title text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 mb-6 pb-2">
+              Advanced Core Capabilities
+            </h2>
+            <p className="text-lg text-gray-500 font-light leading-relaxed">
+              Every ISEFY product is engineered with these powerful standard features to ensure your property is protected by the most advanced technology available.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Capability 1: Vivid Night Vision */}
+            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
+              {/* Hover Background Image */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
+                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-moon text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">Vivid Night Vision</h3>
+                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                  See every detail in color, even in pitch black darkness with 4 smart modes tailored to your specific environment.
+                </p>
               </div>
             </div>
-            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl bg-gray-50 border border-gray-100">
-              <Image
-                src="https://placehold.co/800x800/png?text=Core+Capabilities"
-                alt="Core Capabilities"
-                fill
-                className="object-cover"
-              />
+
+            {/* Capability 2: AI-Powered Detection */}
+            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
+              {/* Hover Background Image */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
+                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-robot text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">AI-Powered Detection</h3>
+                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                  Instantly distinguishes between humans, vehicles, and pets to reduce false alerts and focus on what truly matters.
+                </p>
+              </div>
+            </div>
+
+            {/* Capability 3: Active Defense */}
+            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
+              {/* Hover Background Image */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
+                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-rose-500 to-red-600 flex items-center justify-center mb-6 shadow-lg shadow-red-500/30 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-shield-alt text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">Active Defense</h3>
+                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                  Auto-trigger spotlights and sirens up to 110dB to actively deter potential intruders before they break in.
+                </p>
+              </div>
+            </div>
+
+            {/* Capability 4: Real-Time Talk */}
+            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
+              {/* Hover Background Image */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
+                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-microphone text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">Real-Time Talk</h3>
+                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                  Full-duplex communication with noise cancellation lets you talk and listen to visitors clearly in real-time.
+                </p>
+              </div>
+            </div>
+
+            {/* Capability 5: All-in-One Control */}
+            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
+              {/* Hover Background Image */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
+                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-mobile-alt text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">All-in-One Control</h3>
+                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                  Manage all cameras, smart locks, and sensors from a single intuitive app, anytime, anywhere.
+                </p>
+              </div>
+            </div>
+
+            {/* Capability 6: Custom Security Zones */}
+            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
+              {/* Hover Background Image */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
+                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-crop-simple text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-amber-600 transition-colors">Custom Security Zones</h3>
+                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                  Focus on what matters by simply drawing detection zones on your screen to filter out irrelevant movement.
+                </p>
+              </div>
             </div>
           </div>
         </div>
