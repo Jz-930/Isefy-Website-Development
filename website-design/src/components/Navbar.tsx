@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'motion/react';
 const MENU_CONTENT = {
     Products: [
         {
-            category: 'Cameras',
+            category: 'Network Cameras',
             items: [
                 { name: 'DualWatch Outdoor', image: '/images/product-cameras.png', tag: 'NEW', href: '/products/dualwatch-outdoor-camera' },
                 { name: 'AlertFlash Deterrence', image: '/images/product-cameras.png', tag: 'BEST', href: '/products/alertflash-active-deterrence' },
@@ -17,9 +17,14 @@ const MENU_CONTENT = {
             ]
         },
         {
-            category: 'Doorbells & Locks',
+            category: 'Video Doorbell – Pivot',
             items: [
-                { name: 'Pivot Video Doorbell', image: '/images/product-doorbell.png', tag: '2K', href: '/products/pivot-video-doorbell' },
+                { name: 'Pivot Video Doorbell', image: '/images/product-doorbell.png', tag: '2K', href: '/products/pivot-video-doorbell' }
+            ]
+        },
+        {
+            category: 'Smart Lock – Sentinel',
+            items: [
                 { name: 'Sentinel Smart Lock', image: '/images/product-lock.png', tag: 'NEW', href: '/products/sentinel-smart-lock' }
             ]
         }

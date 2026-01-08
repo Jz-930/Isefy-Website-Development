@@ -68,7 +68,7 @@ export default function Home() {
             <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
               {/* Hover Background Image */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+                <Image src="/images/scenario-residential.png" alt="Background" fill className="object-cover" />
               </div>
 
               <div className="relative z-10">
@@ -86,7 +86,7 @@ export default function Home() {
             <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
               {/* Hover Background Image */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+                <Image src="/images/scenario-retail.png" alt="Background" fill className="object-cover" />
               </div>
 
               <div className="relative z-10">
@@ -104,7 +104,7 @@ export default function Home() {
             <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
               {/* Hover Background Image */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+                <Image src="/images/scenario-soho.png" alt="Background" fill className="object-cover" />
               </div>
 
               <div className="relative z-10">
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
               {/* Hover Background Image */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+                <Image src="/images/product-doorbell.png" alt="Background" fill className="object-cover" />
               </div>
 
               <div className="relative z-10">
@@ -140,7 +140,7 @@ export default function Home() {
             <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
               {/* Hover Background Image */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+                <Image src="/images/app-interface.png" alt="Background" fill className="object-cover" />
               </div>
 
               <div className="relative z-10">
@@ -158,7 +158,7 @@ export default function Home() {
             <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
               {/* Hover Background Image */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/hero2.jpg" alt="Background" fill className="object-cover" />
+                <Image src="/images/cloud-services.png" alt="Background" fill className="object-cover" />
               </div>
 
               <div className="relative z-10">

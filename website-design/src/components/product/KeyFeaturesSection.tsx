@@ -41,6 +41,33 @@ const KeyFeaturesSection: React.FC<KeyPointsProps> = ({ points }) => {
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100/40 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3 pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-100/40 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3 pointer-events-none"></div>
 
+            {/* Top Fade Gradient for Smooth Blending */}
+            <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none"></div>
+
+            {/* Dynamic Background Image Layer */}
+            <AnimatePresence mode="wait">
+                <motion.div
+                    key={activeIndex}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 0.2 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1 }}
+                    className="absolute inset-0 w-full h-full pointer-events-none z-0"
+                    style={{
+                        maskImage: 'linear-gradient(to right, black 0%, transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to right, black 0%, transparent 100%)'
+                    }}
+                >
+                    <Image
+                        src={activePoint.image || '/images/hero-banner.png'}
+                        alt="Background"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                </motion.div>
+            </AnimatePresence>
+
             {/* CSS Animation for Fill Effect */}
             <style jsx global>{`
                 @keyframes revealClip {

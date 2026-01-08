@@ -26,7 +26,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     return (
         <div className="bg-white min-h-screen">
             {/* 1. Hero Section */}
-            <section className="pt-24 pb-16 border-b border-gray-100">
+            <section className="pt-24 pb-16">
                 <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Gallery Placeholder */}
                     <div className="bg-gray-50 rounded-2xl p-8 flex items-center justify-center h-[500px]">

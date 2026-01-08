@@ -6,7 +6,16 @@ export default function SolutionsPage() {
         <main>
             {/* Hero */}
             <section className="bg-slate-900 text-white py-24 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-isefy-purple to-isefy-dark-blue"></div>
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/hero.jpg"
+                        alt="Solutions Hero Background"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-black/60 mix-blend-multiply"></div>
+                </div>
                 <div className="container-custom relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Security solutions for every scenario</h1>
                     <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
@@ -42,7 +51,7 @@ export default function SolutionsPage() {
                         <div className="group border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all hover:border-blue-100">
                             <div className="h-48 relative rounded-2xl overflow-hidden mb-6 bg-gray-100">
                                 <Image
-                                    src="https://placehold.co/600x400/png?text=Retail+Store"
+                                    src="/images/scenario-retail.png"
                                     alt="Retail Store"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -61,7 +70,7 @@ export default function SolutionsPage() {
                         <div className="group border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all hover:border-blue-100">
                             <div className="h-48 relative rounded-2xl overflow-hidden mb-6 bg-gray-100">
                                 <Image
-                                    src="https://placehold.co/600x400/png?text=SOHO+Office"
+                                    src="/images/scenario-soho.png"
                                     alt="SOHO Office"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
