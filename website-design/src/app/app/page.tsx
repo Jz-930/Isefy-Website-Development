@@ -6,7 +6,7 @@ export default function AppPage() {
         <main>
             {/* Hero */}
             {/* Hero */}
-            <section className="bg-isefy-dark-blue text-white pt-32 pb-24 md:pt-40 md:pb-32 relative overflow-hidden">
+            <section className="bg-slate-900 text-white pt-32 pb-24 md:pt-40 md:pb-32 relative overflow-hidden">
                 {/* Background Blobs */}
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-isefy-purple/20 rounded-full blur-[120px] -mr-40 -mt-20 pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[100px] -ml-20 -mb-20 pointer-events-none"></div>

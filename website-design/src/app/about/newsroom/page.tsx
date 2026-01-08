@@ -46,7 +46,7 @@ export default function NewsroomPage() {
     return (
         <main>
             {/* Hero Section */}
-            <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-isefy-dark-blue">
+            <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/images/hero2.jpg"
@@ -55,7 +55,7 @@ export default function NewsroomPage() {
                         className="object-cover opacity-30 mix-blend-overlay"
                         priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-isefy-dark-blue via-isefy-dark-blue/60 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
                 </div>
                 <div className="container-custom relative z-10 text-center">
                     <span className="text-accent font-bold tracking-widest uppercase mb-4 block">Press & Media</span>

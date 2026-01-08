@@ -5,7 +5,7 @@ export default function AboutPage() {
     return (
         <main>
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-isefy-dark-blue">
+            <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/images/hero2.jpg"
@@ -14,7 +14,7 @@ export default function AboutPage() {
                         className="object-cover opacity-50 mix-blend-overlay"
                         priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-isefy-dark-blue/40 to-isefy-dark-blue"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-slate-900/40 to-slate-900"></div>
                 </div>
                 <div className="container-custom relative z-10 text-center">
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">

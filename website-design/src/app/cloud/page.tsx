@@ -5,8 +5,8 @@ export default function CloudPage() {
     return (
         <main>
             {/* Hero */}
-            <section className="bg-isefy-dark-blue text-white py-24 text-center relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-isefy-purple to-isefy-dark-blue"></div>
+            <section className="bg-slate-900 text-white py-24 text-center relative overflow-hidden">
+                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-isefy-purple to-slate-900"></div>
                 <div className="container-custom relative z-10">
                     <h1 className="text-5xl font-bold mb-4">ISEFY Protect (Cloud)</h1>
                     <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-10">

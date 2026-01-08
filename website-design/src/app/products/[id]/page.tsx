@@ -154,7 +154,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             </section>
 
             {/* Bottom Buy CTA */}
-            <section className="py-12 bg-isefy-dark-blue text-white text-center">
+            <section className="py-12 bg-slate-900 text-white text-center">
                 <h2 className="text-3xl font-bold mb-6">Ready to secure your home?</h2>
                 <Link href="#" className="btn bg-white text-isefy-dark-blue font-bold px-12 py-4 hover:bg-gray-100">
                     Buy {product.name} Now

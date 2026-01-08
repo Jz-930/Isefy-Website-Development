@@ -189,7 +189,7 @@ export default function Home() {
       </section>
 
       {/* Ecosystem Section */}
-      <section className="py-24 relative overflow-hidden bg-isefy-dark-blue">
+      <section className="py-24 relative overflow-hidden bg-slate-900">
         <div className="absolute inset-0 opacity-40">
           <Image
             src="/images/hero2.jpg"
@@ -197,7 +197,7 @@ export default function Home() {
             fill
             className="object-cover mix-blend-overlay"
           />
-          <div className="absolute inset-0 bg-isefy-dark-blue/60 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
         </div>
         <div className="container-custom relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Complete Home Protection</h2>

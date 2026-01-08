@@ -4,8 +4,8 @@ export default function SupportPage() {
     return (
         <main>
             {/* Hero */}
-            <section className="bg-isefy-dark-blue text-white py-24 text-center relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-isefy-purple to-isefy-dark-blue"></div>
+            <section className="bg-slate-900 text-white py-24 text-center relative overflow-hidden">
+                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-isefy-purple to-slate-900"></div>
                 <div className="container-custom relative z-10">
                     <h1 className="text-4xl md:text-5xl font-bold mb-8">How can we help you?</h1>
                     <div className="max-w-2xl mx-auto relative">

@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
     return (
         <main>
             {/* Header / Title Section */}
-            <section className="bg-isefy-dark-blue py-20 text-center">
+            <section className="bg-slate-900 py-20 text-center">
                 <div className="container-custom">
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Privacy Policy</h1>
                     <p className="text-blue-200 text-lg">Last Updated: December 18, 2024</p>

@@ -4,7 +4,7 @@ export default function ContactSection() {
     return (
         <section className="py-24 bg-white">
             <div className="container-custom">
-                <div className="bg-isefy-dark-blue rounded-[3rem] overflow-hidden shadow-2xl relative">
+                <div className="bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl relative">
                     {/* Abstract Background Decoration */}
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-isefy-purple rounded-full blur-[100px] opacity-30 pointer-events-none -mr-40 -mt-40"></div>
                     <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-isefy-blue rounded-full blur-[100px] opacity-30 pointer-events-none -ml-20 -mb-20"></div>
