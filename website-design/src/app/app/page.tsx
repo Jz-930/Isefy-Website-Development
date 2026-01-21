@@ -76,23 +76,59 @@ export default function AppPage() {
             {/* Features Grid */}
             <section className="py-24 bg-white">
                 <div className="container-custom">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
                         {[
-                            { title: 'Smart Color Night Vision', desc: 'Four smart night vision modes provide clear full‑color or black‑and‑white pictures even in complete darkness.' },
-                            { title: 'Advanced AI Detection', desc: 'Proprietary algorithms enhance accuracy, minimize false alerts, and elevate home security.' },
-                            { title: 'Detection Region', desc: 'Tap and select grids to set motion detection areas.' },
-                            { title: 'Variable Voice Talk', desc: 'Interact with visitors or dissuade unwelcome people while protecting your privacy.' },
-                            { title: 'Active Deterrence', desc: 'Built‑in spotlight and 110dB siren activate when intrusion is detected.' },
-                            { title: 'Smart Control', desc: 'Create scenes, set routines, and schedule defense that adapts to your life.' }
+                            {
+                                title: 'Smart Color Night Vision',
+                                desc: 'Four smart night vision modes provide clear full‑color or black‑and‑white pictures even in complete darkness.',
+                                image: '/images/app_features/night_vision.png'
+                            },
+                            {
+                                title: 'Advanced AI Detection',
+                                desc: 'Proprietary algorithms enhance accuracy, minimize false alerts, and elevate home security.',
+                                image: '/images/app_features/ai_detection.png'
+                            },
+                            {
+                                title: 'Detection Region',
+                                desc: 'Tap and select grids to set motion detection areas specific to your home layout.',
+                                image: '/images/app_features/detection_region.png'
+                            },
+                            {
+                                title: 'Variable Voice Talk',
+                                desc: 'Interact with visitors or dissuade unwelcome people while protecting your privacy with voice changing options.',
+                                image: '/images/app_features/voice_talk.png'
+                            },
+                            {
+                                title: 'Active Deterrence',
+                                desc: 'Built‑in spotlight and 110dB siren activate automatically when intrusion is detected.',
+                                image: '/images/app_features/active_deterrence.png'
+                            },
+                            {
+                                title: 'Smart Control',
+                                desc: 'Create scenes, set routines, and schedule defense that adapts to your daily life.',
+                                image: '/images/app_features/smart_control.png'
+                            }
                         ].map((feature, idx) => (
-                            <div key={idx} className="flex flex-col">
-                                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
-                                    <i className="fas fa-check text-xl"></i>
+                            <div key={idx} className="flex flex-col bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+                                {/* Image Slot */}
+                                <div className="w-full aspect-[4/3] bg-slate-200 relative group-hover:bg-slate-300/50 transition-colors">
+                                    <Image
+                                        src={feature.image}
+                                        alt={feature.title}
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
                                 </div>
-                                <h3 className="text-xl font-bold text-slate-800 mb-3">{feature.title}</h3>
-                                <p className="text-slate-600 leading-relaxed">
-                                    {feature.desc}
-                                </p>
+
+                                <div className="p-8 md:p-10 flex flex-col flex-grow">
+                                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">
+                                        <i className="fas fa-check text-xl"></i>
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-slate-900 mb-4">{feature.title}</h3>
+                                    <p className="text-slate-600 leading-relaxed text-lg">
+                                        {feature.desc}
+                                    </p>
+                                </div>
                             </div>
                         ))}
                     </div>

@@ -205,7 +205,7 @@ export const products: Product[] = [
             'Resolution': '2K 3MP (2048×1536)',
             'Field of View': '160° (125° H)',
             'Battery': '5000mAh',
-            'Connectivity': '2.4 GHz WiFi',
+            'Connectivity': 'Dual-Band Wi-Fi: 2.4GHz & 5GHz',
             'Chime': 'Included (WiFi Extender)'
         },
         boxContent: [

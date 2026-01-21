@@ -4,12 +4,13 @@ export interface ProductContent {
         description: string;
         whyBetter: string[];
         scenario: string;
-        image?: string; // Placeholder or mapped image
+        image?: string;
+        video?: string; // Supports .mp4 (loop) or .gif
     }[];
     secondaryFeatures?: {
         title: string;
         description: string;
-        image?: string;
+        icon?: string; // FontAwesome icon name (without fa- prefix)
     }[];
 }
 
@@ -17,49 +18,34 @@ export const productContent: Record<string, ProductContent> = {
     'pivot-video-doorbell': {
         keySellingPoints: [
             {
-                title: '30° Pan Lens + Wide Angle View',
-                description: 'In some residential settings, the doorbell may need to be installed on the side of the doorway rather than directly facing the entrance. With our 30° pan-adjustable lens, users can easily adjust the viewing angle to ensure the doorway is fully covered—without needing a physical wedge plate behind the doorbell.',
-                whyBetter: [
-                    'Eliminates complicated physical installation.',
-                    'Offers more ideal framing even in corner-mounted scenarios.',
-                    'Wide angle ensures full head-to-toe visibility.'
-                ],
-                scenario: 'If the doorbell must be mounted on a side wall because of brick layout or wiring constraints, the homeowner can still clearly monitor approaching visitors, packages, and suspicious movement without blind spots—something traditional fixed-view models struggle to achieve.',
-                image: '/images/product-doorbell.png' // Placeholder
+                title: '30° Pan Lens + Smart Tracking',
+                description: 'With our adjustable 30° pan lens and smart tracking technology, the Pivot Doorbell ensures you never miss a visitor, even if your doorbell is mounted on a side wall. It automatically follows movement to keep guests in clear view.',
+                whyBetter: [],
+                scenario: '',
+                image: '/images/product-doorbell.png' // Placeholder until specific image provided
             },
             {
                 title: 'Chime as Wi-Fi Extender + Storage Base',
-                description: 'Our chime works not only as a ringer but also as a Wi-Fi extender and storage base. The microSD card is stored inside the chime, not the doorbell.',
-                whyBetter: [
-                    'If the doorbell is damaged or stolen, video evidence remains safe.',
-                    'Extended signal coverage allows for more flexible doorbell placement.',
-                    'More stable connectivity improves notification reliability.'
-                ],
-                scenario: 'If someone tries to remove or vandalize the doorbell, the critical recorded alarm videos remain stored in the chime safely indoors—unlike traditional models that lose footage when the device is stolen. Meanwhile, users can place the doorbell farther from the router, covering more types of house layouts.',
-                image: '/images/hero-banner.png' // Placeholder
-            },
-            {
-                title: 'Stable 2.4GHz Wi-Fi Connection',
-                description: 'Optimized for 2.4GHz networks to provide better wall penetration and long-range connectivity, ensuring your doorbell stays online.',
-                whyBetter: [
-                    'Better signal range through exterior walls.',
-                    'High compatibility with standard routers.',
-                    'More reliable connection for remote alerts.'
-                ],
-                scenario: 'Since doorbells are often installed outside thick exterior walls or brick, the 2.4GHz band offers superior penetration compared to 5GHz, ensuring you never miss a visitor notification even if the router is far away.',
-                image: '/images/hero2.jpg' // Placeholder
+                description: 'The indoor chime acts as a Wi-Fi booster for the doorbell and securely stores your recordings. Data is kept safe inside your home, protecting it from theft or damage to the outdoor unit.',
+                whyBetter: [],
+                scenario: '',
+                image: '/images/pivot_chime_storage.png'
             },
             {
                 title: 'Built-in 5,000mAh Rechargeable Battery',
-                description: 'The integrated 5000mAh battery enables the doorbell to operate for up to 120 days per charge, depending on usage.',
-                whyBetter: [
-                    'Fewer charging interruptions.',
-                    'More convenient for renters or homes without doorbell wiring.',
-                    'Flexible installation without concern for power supply.'
-                ],
-                scenario: 'For users who prioritize low-maintenance devices (e.g., rental properties or vacation homes), the long-lasting battery ensures reliable operation for months at a time—without frequent recharging or wiring.',
+                description: 'Enjoy long-lasting protection with the powerful 5,000mAh battery. 100% wire-free installation makes setup a breeze, or connect to existing wiring for continuous power.',
+                whyBetter: [],
+                scenario: '',
                 image: '/images/scenario-soho.png' // Placeholder
             }
+        ],
+        secondaryFeatures: [
+            { title: '3MP 2K Video', description: 'Crystal clear video quality to see every detail.', icon: 'video' },
+            { title: 'Loitering Detection', description: 'Get notified if someone lingers at your door.', icon: 'user-clock' },
+            { title: '100% Wire-free', description: 'Easy installation with no wires needed.', icon: 'battery-full' },
+            { title: 'Optional Hardwired', description: 'Can support hardwired power supply.', icon: 'plug' },
+            { title: 'PIR + Human Detection', description: 'Accurate alerts with reduced false alarms.', icon: 'user-check' },
+            { title: 'Two-way talk', description: 'Variable Voice options for privacy and fun.', icon: 'microphone-alt' }
         ]
     },
     'dualwatch-outdoor-camera': {
@@ -107,6 +93,14 @@ export const productContent: Record<string, ProductContent> = {
                 scenario: 'In homes with many smart devices, 2.4GHz can be saturated; switching to 5GHz ensures smooth live monitoring and fast event playback.\n\nWhen placed near the exterior wall facing the street, 5GHz transmission helps maintain consistently clean video for plate-capture or detailed face recognition.',
                 image: '/images/scenario-soho.png' // Placeholder
             }
+        ],
+        secondaryFeatures: [
+            { title: '3MP Fixed Lens + 5MP Pan & Tilt Lens', description: 'Combined dual-lens system for both wide-angle monitoring and detailed close-ups.', icon: 'camera' },
+            { title: 'Smart Color Night Vision', description: 'Capture vivid colors even in low-light conditions with built-in spotlights.', icon: 'eye' },
+            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation in rain or shine.', icon: 'umbrella' },
+            { title: 'Two-way Talk', description: 'Listen and talk back to visitors in real-time via the app.', icon: 'microphone-alt' },
+            { title: 'Smart Tracking', description: 'Automatically tracks moving people or vehicles to keep them in frame.', icon: 'running' },
+            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence system to warn off potential intruders immediately.', icon: 'bullhorn' }
         ]
     },
     'alertflash-active-deterrence': {
@@ -124,7 +118,7 @@ export const productContent: Record<string, ProductContent> = {
                 image: '/images/product-cameras.png' // Placeholder
             },
             {
-                title: 'Captures More Area with Pan & Tilt',
+                title: 'Captures More Area with Pan & Tilt (0-355° / 0-90°)',
                 description: 'With a 0-355° pan and 0-90° tilt range, Alert Flash provides flexible all-around monitoring, ensuring minimal blind spots around the home.',
                 whyBetter: [
                     'Allows users to remotely reposition the view.',
@@ -133,6 +127,17 @@ export const productContent: Record<string, ProductContent> = {
                 ],
                 scenario: 'One camera can watch both the front driveway and side alley simply by rotating the head.\n\nWhen motion is detected near the garage, users can pan the camera to follow activity without physically moving the unit.\n\nPerfect for homes with large yards, patios, or fencing lines where fixed cameras can\'t cover every angle.',
                 image: '/images/hero-banner.png' // Placeholder
+            },
+            {
+                title: 'Built-In Deterrence: Rapid-Response Lighting & Siren',
+                description: 'Alert Flash features high-intensity lighting and a powerful audio alarm that activate instantly when suspicious activity is detected, acting proactively rather than passively.',
+                whyBetter: [
+                    'Warns intruders immediately.',
+                    'Boosts nighttime visibility for brighter, clearer recordings.',
+                    'Protects property perimeter before crime begins.'
+                ],
+                scenario: 'At night, if someone approaches and looks into parked cars, the lights snap on and an alert sounds—intruders usually retreat before attempting theft.\n\nWhile you\'re on vacation, if someone lingers near a window, the deterrence system activates automatically to warn them and notify you instantly.',
+                image: '/images/hero2.jpg' // Placeholder
             },
             {
                 title: 'Dual-Band Wi-Fi: 2.4GHz & 5GHz',
@@ -145,6 +150,14 @@ export const productContent: Record<string, ProductContent> = {
                 scenario: 'In neighborhoods with a high density of Wi-Fi routers, 5GHz ensures fewer dropouts and clearer video when monitoring critical zones.\n\nIf you place the camera outside facing the street to monitor roaming vehicles, 5GHz helps maintain cleaner footage for plate recognition and AI classification.',
                 image: '/images/hero2.jpg' // Placeholder
             }
+        ],
+        secondaryFeatures: [
+            { title: '3MP H.265 Video', description: 'Crystal clear video quality to see every detail.', icon: 'video' },
+            { title: 'Smart Color Night Vision', description: 'See real colors rather than low-detail grayscale.', icon: 'eye' },
+            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation.', icon: 'umbrella' },
+            { title: 'Two-way Talk', description: 'Listen and talk back through the camera.', icon: 'microphone' },
+            { title: 'Smart Tracking & Human Detection', description: 'Automatically follows moving objects.', icon: 'user-check' },
+            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence to warn off intruders.', icon: 'lightbulb' }
         ]
     },
     'voyager-indoor-pt': {
@@ -182,6 +195,14 @@ export const productContent: Record<string, ProductContent> = {
                 scenario: 'When leaving home, Voyager automatically activates monitoring + alerts, safeguarding the home while everyone is away.\n\nWhen returning home, the camera automatically enters privacy mode, so the lens tilts into a non-viewing position, ensuring family activity isn\'t recorded.\n\nDuring nighttime or family gatherings, users can schedule privacy windows to ensure the camera is off at specific times.',
                 image: '/images/hero2.jpg' // Placeholder
             }
+        ],
+        secondaryFeatures: [
+            { title: 'Baby Crying Detect', description: 'Instant alerts when your baby needs attention.', icon: 'baby' },
+            { title: 'Pet Monitoring', description: 'Keep an eye on your pets while you are away.', icon: 'paw' },
+            { title: 'Privacy Shield', description: 'Physical lens cover for guaranteed privacy.', icon: 'user-secret' },
+            { title: '360° Coverage', description: 'Pan and tilt to overlook the entire room.', icon: 'arrows-alt' },
+            { title: 'Motion Tracking', description: 'Follows movement to keep subjects in frame.', icon: 'walking' },
+            { title: 'Sleep Mode', description: 'Schedule camera to turn off when you are home.', icon: 'bed' }
         ]
     },
     'sentinel-smart-lock': {
@@ -220,12 +241,18 @@ export const productContent: Record<string, ProductContent> = {
                 scenario: 'Parents can check if children arrived home safely by viewing which user (e.g., "Tom") unlocked the door and at what time (e.g., 3:15 PM).\n\nA landlord can assign different access groups – e.g., tenants vs. cleaners with their own unlock schedules.\n\nFor short-term rental hosts, once the booking ends, they can revoke the guest\'s access remotely, without needing physical contact.\n\nIf a caregiver or housekeeper enters during the day, the app records exactly who accessed the home and when, providing peace of mind.',
                 image: '/images/hero2.jpg' // Placeholder
             }
+        ],
+        secondaryFeatures: [
+            { title: 'Easy Setup', description: 'Easy setup with ISEFY APP.', icon: 'mobile-alt' },
+            { title: 'Multidimensional Fingerprint', description: 'Advanced biometric recognition.', icon: 'fingerprint' },
+            { title: '12-Month Battery Life', description: '4* AA battery for 12 months.', icon: 'battery-full' },
+            { title: 'Abnormal Event Alert', description: 'Forced Lock, Anomaly, Low Battery.', icon: 'exclamation-triangle' }
         ]
     },
     'guardianeye-ptz': {
         keySellingPoints: [
             {
-                title: 'Smart Tracking - Automatically Follows Movement',
+                title: 'Smart Tracking (Automatically Follows Movement)',
                 description: 'The camera uses intelligent motion analysis to detect and follow moving targets, ensuring the person or object stays within view.',
                 whyBetter: [
                     'No need to manually adjust the camera angle.',
@@ -237,29 +264,113 @@ export const productContent: Record<string, ProductContent> = {
                 image: '/images/product-cameras.png' // Placeholder
             },
             {
-                title: 'Two-Way Talk - Real-Time Communication',
-                description: 'Built-in microphone and speaker let you speak directly with people near the camera via the app.',
+                title: 'Captures More Area with Pan & Tilt (0-355° / 0-90°)',
+                description: 'With a 0-355° pan and 0-90° tilt range, Guardian Eye provides flexible all-around monitoring, ensuring minimal blind spots around the home.',
                 whyBetter: [
-                    'Easy to talk to visitors or couriers.',
-                    'Respond no matter where you are.',
-                    'Helpful for elderly family or kids coming home.',
-                    'Can help deter suspicious activity.'
+                    'Allows users to remotely reposition the view.',
+                    'Reduces the number of cameras needed.',
+                    'Ideal for large open spaces or irregular layouts.'
                 ],
-                scenario: 'While at work, you can tell a courier where to safely leave a package.\n\nKids arrive home early - parents can greet them and confirm everything is okay.\n\nIf someone unfamiliar is near the property, you can talk to them remotely, letting them know they\'re being monitored, which often discourages intrusion.',
+                scenario: 'One camera can watch both the front driveway and side alley simply by rotating the head.\n\nWhen motion is detected near the garage, users can pan the camera to follow activity without physically moving the unit.\n\nPerfect for homes with large yards, patios, or fencing lines where fixed cameras can\'t cover every angle.',
                 image: '/images/hero-banner.png' // Placeholder
             },
             {
-                title: 'Smart Color Night Vision',
-                description: 'Four enhanced night-vision modes provide vivid nighttime imaging, helping capture critical detail even with limited ambient lighting.',
+                title: 'Built-In Deterrence: Rapid-Response Lighting & Siren',
+                description: 'Guardian Eye features high-intensity lighting and a powerful audio alarm that activate instantly when suspicious activity is detected, acting proactively rather than passively.',
                 whyBetter: [
-                    'See real colors rather than low-detail grayscale.',
-                    'Better identification of people, vehicles, and clothing.',
-                    'More useful video evidence at night.',
-                    'Works even when the environment is pitch-black.'
+                    'Warns intruders immediately.',
+                    'Boosts nighttime visibility for brighter, clearer recordings.',
+                    'Protects property perimeter before crime begins.'
                 ],
-                scenario: 'Late at night, you can still see a visitor\'s clothing color, direction of movement, or vehicle color - valuable for security reports.\n\nWhen monitoring a dark yard or garage entrance, smart color night vision helps identify faces and objects more accurately.\n\nIf a suspicious vehicle stops outside, the camera can capture plate area and color tones more clearly compared with standard night-vision cameras.',
+                scenario: 'At night, if someone approaches and looks into parked cars, the lights snap on and an alert sounds—intruders usually retreat before attempting theft.\n\nWhile you\'re on vacation, if someone lingers near a window, the deterrence system activates automatically to warn them and notify you instantly.',
                 image: '/images/hero2.jpg' // Placeholder
             }
+        ],
+        secondaryFeatures: [
+            { title: '3MP H.265 Video', description: 'Crystal clear video quality to see every detail.', icon: 'video' },
+            { title: 'Smart Color Night Vision', description: 'See real colors rather than low-detail grayscale.', icon: 'eye' },
+            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation.', icon: 'umbrella' },
+            { title: 'Two-way Talk', description: 'Listen and talk back through the camera.', icon: 'microphone-alt' },
+            { title: 'Alarm Notification', description: 'Instant alerts sent to your phone when events occur.', icon: 'bell' },
+            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence to warn off intruders.', icon: 'lightbulb' }
         ]
     }
+};
+
+export interface CloudPageContent {
+    visualFeatures: {
+        title: string;
+        description: string;
+        image: string;
+    }[];
+    pricingPlans: {
+        name: string;
+        price: string;
+        storage: string;
+        ai: string;
+        reporting: string;
+        commonFeatures: string[];
+        highlight: boolean;
+    }[];
+    subscriptionGuide: {
+        step: number;
+        title: string;
+        description: string;
+        image: string;
+    }[];
+}
+
+export const cloudPageContent: CloudPageContent = {
+    visualFeatures: [
+        {
+            title: "Cloud Playback",
+            description: "Review footage from anywhere, anytime. Your data is securely stored in the cloud, ensuring you never miss a moment even if your device is offline.",
+            image: "/images/cloud-playback.png" // Placeholder
+        },
+        {
+            title: "AI Analysis",
+            description: "Advanced AI algorithms analyze your video feeds to detect humans, vehicles, pets, and packages, reducing false alarms and providing smarter insights.",
+            image: "/images/ai-analysis.png" // Placeholder
+        }
+    ],
+    pricingPlans: [
+        {
+            name: "Cloud Starter",
+            price: "$5.99/Camera",
+            storage: "7 Days Storage",
+            ai: "Basic AI",
+            reporting: "Basic Reporting",
+            commonFeatures: ["Live Streaming", "Home Safeguard Mode"],
+            highlight: false
+        },
+        {
+            name: "Cloud Elite",
+            price: "$11.99/Camera",
+            storage: "30 Days Storage",
+            ai: "Advanced AI (Human/Vehicle/Pets/Package)",
+            reporting: "Standard Reporting",
+            commonFeatures: ["Live Streaming", "Home Safeguard Mode"],
+            highlight: true
+        }
+    ],
+    subscriptionGuide: [
+        {
+            step: 1,
+            title: "Open App",
+            description: "Launch the ISEFY App on your smartphone.",
+            image: "/images/guide-step1.png" // Placeholder
+        },
+        {
+            step: 2,
+            title: "Go to Profile",
+            description: "Tap on your profile icon to access account settings.",
+            image: "/images/guide-step2.png" // Placeholder
+        },
+        {
+            step: 3,
+            title: "Select Cloud",
+            description: "Choose the Cloud section to view and subscribe to plans.",
+            image: "/images/guide-step3.png" // Placeholder
+        }
+    ]
 };

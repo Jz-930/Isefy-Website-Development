@@ -176,24 +176,62 @@ export default function Home() {
       </section>
 
       {/* Ecosystem Section */}
-      <section className="py-24 relative overflow-hidden bg-slate-900">
-        <div className="absolute inset-0 opacity-40">
-          <Image
-            src="/images/hero2.jpg"
-            alt="Ecosystem Background"
-            fill
-            className="object-cover mix-blend-overlay"
-          />
-          <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
-        </div>
-        <div className="container-custom relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Complete Home Protection</h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-10">
-            ISEFY's smart solution integrates all our products into a single app for seamless interaction.
-          </p>
-          <Link href="/solutions" className="bg-white text-isefy-dark-purple px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-colors inline-block shadow-xl">
-            Explore Complete Solutions
-          </Link>
+      <section className="py-24 bg-slate-900 relative">
+        <div className="container-custom relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Complete Home Protection</h2>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-10">
+              ISEFY's smart solution integrates all our products into a single app for seamless interaction, covering every corner of your home inside and out.
+            </p>
+            <Link href="/solutions" className="bg-white text-isefy-dark-purple px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-colors inline-block shadow-xl">
+              Explore Complete Solutions
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Image 1: Exterior */}
+            <div className="relative group rounded-3xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800">
+              <div className="absolute top-4 left-4 z-20 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                Exterior
+              </div>
+              <div className="relative aspect-[4/3] w-full">
+                <Image
+                  src="/images/ecosystem-exterior-placeholder.png"
+                  alt="Exterior Home Protection - Pivot, Alert Flash"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                {/* Optional: Add overlaid labels if needed dynamically, or rely on image annotations */}
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Perimeter Defense</h3>
+                <p className="text-gray-400">
+                  Secure your property boundaries with <strong>AlertFlash</strong> deterrence cameras and the <strong>Pivot</strong> video doorbell.
+                </p>
+              </div>
+            </div>
+
+            {/* Image 2: Interior */}
+            <div className="relative group rounded-3xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800">
+              <div className="absolute top-4 left-4 z-20 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                Interior
+              </div>
+              <div className="relative aspect-[4/3] w-full">
+                <Image
+                  src="/images/ecosystem-interior-placeholder.png"
+                  alt="Interior Home Protection - Voyager, Sentinel"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Indoor Safety</h3>
+                <p className="text-gray-400">
+                  Monitor living spaces with the <strong>Voyager</strong> indoor camera and manage access with the <strong>Sentinel</strong> smart lock.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

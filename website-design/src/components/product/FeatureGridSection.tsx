@@ -24,33 +24,27 @@ const FeatureGridSection: React.FC<FeatureGridProps> = ({ features }) => {
     if (!features || features.length === 0) return null;
 
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-24 bg-white border-t border-gray-100">
             <div className="container-custom">
-                <h2 className="text-center text-3xl font-bold text-isefy-dark-blue mb-16">More Features</h2>
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl font-bold text-base-dark mb-4">More Detailed Features</h2>
+                    <p className="text-gray-500">Everything else you need to know.</p>
+                </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {features.map((feature, idx) => (
-                        <div key={idx} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
-                            {/* Card Image Area - half height roughly or square? "Small tile stacking" */}
-                            {/* Reference image 2 shows square-ish graphical icons/images on top, text below. */}
-                            <div className="relative h-48 bg-gray-100 overflow-hidden">
-                                {feature.image ? (
-                                    <Image
-                                        src={feature.image}
-                                        alt={feature.title}
-                                        fill
-                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                    />
-                                ) : (
-                                    <div className="flex items-center justify-center h-full text-isefy-blue text-5xl">
-                                        <i className={`fas fa-${feature.icon || 'star'}`}></i>
-                                    </div>
-                                )}
+                        <div key={idx} className="flex gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
+                            {/* Icon */}
+                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-isefy-blue/10 flex items-center justify-center text-isefy-blue text-xl">
+                                <i className={`fas fa-${feature.icon || 'check-circle'}`}></i>
                             </div>
 
-                            <div className="p-6">
-                                <h3 className="font-bold text-lg text-slate-900 mb-2">{feature.title}</h3>
-                                <p className="text-sm text-gray-500 leading-relaxed">{feature.description}</p>
+                            {/* Text */}
+                            <div>
+                                <h3 className="font-bold text-gray-900 mb-2">{feature.title}</h3>
+                                <p className="text-sm text-gray-500 leading-relaxed font-medium">
+                                    {feature.description}
+                                </p>
                             </div>
                         </div>
                     ))}

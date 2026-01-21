@@ -19,17 +19,20 @@ const solutionData: any = {
             {
                 title: 'Doorstep Monitoring',
                 desc: 'Visitors, deliveries, and suspicious lingering.',
-                solution: 'Pivot Video Doorbell (30° pan + smart tracking + loitering detection)'
+                solution: 'Pivot Video Doorbell (30° pan + smart tracking + loitering detection)',
+                productImages: ['/images/product-doorbell.png']
             },
             {
                 title: 'Home Break‑ins',
                 desc: 'Deterrence & access control.',
-                solution: 'Sentinel Smart Lock + AlertFlash active deterrence (spotlight + siren + red/blue warning lights)'
+                solution: 'Sentinel Smart Lock + AlertFlash active deterrence (spotlight + siren + red/blue warning lights)',
+                productImages: ['/images/product-lock.png', '/images/product-cameras.png']
             },
             {
                 title: 'Kid/Pet Safety',
                 desc: 'Indoor awareness without compromising privacy.',
-                solution: 'Voyager Indoor Camera (Abnormal Sound Alarm + Privacy Mode)'
+                solution: 'Voyager Indoor Camera (Abnormal Sound Alarm + Privacy Mode)',
+                productImages: ['/images/product-cameras.png']
             }
         ],
         products: [
@@ -115,6 +118,15 @@ export default async function SolutionDetail({ params }: { params: Promise<{ typ
                                 <div className="pt-4 border-t border-gray-200">
                                     <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">ISEFY Solution</span>
                                     <p className="text-slate-700 font-medium mt-1">{item.solution}</p>
+                                    {item.productImages && (
+                                        <div className="flex gap-4 mt-4">
+                                            {item.productImages.map((img: string, i: number) => (
+                                                <div key={i} className="relative w-20 h-20 bg-white rounded-lg border border-gray-100 p-2 shadow-sm">
+                                                    <Image src={img} alt="Product Solution" fill className="object-contain" />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         ))}
