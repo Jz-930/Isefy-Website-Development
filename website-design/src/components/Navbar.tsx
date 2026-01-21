@@ -177,7 +177,7 @@ export default function Navbar() {
                                         </h3>
                                         <div className={`grid gap-4 ${activeMenu === 'Solutions' ? 'grid-cols-3' : 'grid-cols-1 sm:grid-cols-2'}`}>
                                             {section.items.map((item: any, i: number) => (
-                                                <Link href={item.href} key={i} className="group flex flex-col items-center text-center p-4 rounded-xl bg-gray-50 border border-transparent hover:border-isefy-blue/30 hover:shadow-lg transition-all duration-300">
+                                                <Link href={item.href} key={i} onClick={() => setActiveMenu(null)} className="group flex flex-col items-center text-center p-4 rounded-xl bg-gray-50 border border-transparent hover:border-isefy-blue/30 hover:shadow-lg transition-all duration-300">
                                                     <div className="relative w-24 h-24 mb-3">
                                                         {item.tag && (
                                                             <span className="absolute -top-1 -right-1 bg-isefy-blue text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded shadow-sm z-10">
@@ -205,7 +205,7 @@ export default function Navbar() {
                             {/* Bottom CTA for Products */}
                             {activeMenu === 'Products' && (
                                 <div className="mt-8 pt-4 border-t border-gray-100 text-center">
-                                    <Link href="/products" className="text-isefy-blue hover:text-isefy-dark-blue font-semibold text-sm inline-flex items-center">
+                                    <Link href="/products" onClick={() => setActiveMenu(null)} className="text-isefy-blue hover:text-isefy-dark-blue font-semibold text-sm inline-flex items-center">
                                         Compare all products <i className="fas fa-arrow-right ml-2"></i>
                                     </Link>
                                 </div>
