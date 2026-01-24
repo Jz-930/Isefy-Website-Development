@@ -28,7 +28,7 @@ export const products: Product[] = [
         price: 129.99,
         rating: 4.8,
         reviews: 124,
-        image: '/images/product-cameras.png',
+        image: '/products/cameras/dualwatch-main.png',
         badges: ['Best Seller', 'New Arrival'],
         tagline: 'Two Lenses. Zero Blind Spots.',
         description: '8MP Dual-Lens PTZ Camera with Auto-Tracking and Color Night Vision.',
@@ -41,10 +41,10 @@ export const products: Product[] = [
             "DualWatch supports four night vision modes for clear‑as‑day clarity even in pitch dark. With IP66 weatherproofing, a built‑in spotlight and 110dB siren, DualWatch provides proactive outdoor protection with high‑quality two‑way talk."
         ],
         highlights: [
-            { title: '8MP Dual-Lens', desc: 'See both the big picture and the details.', image: '/images/product-cameras.png' },
-            { title: '360° Tracking', desc: 'AI automatically tracks moving subjects.', image: '/images/hero-banner.png' },
-            { title: 'Color Night Vision', desc: 'True color even in pitch darkness.', image: '/images/hero2.jpg' },
-            { title: 'Active Deterrence', desc: 'Siren and spotlight warn off intruders.', image: '/images/scenario-residential.png' }
+            { title: '8MP Dual-Lens', desc: 'See both the big picture and the details.', image: '/products/cameras/dualwatch-highlight-1.png' },
+            { title: '360° Tracking', desc: 'AI automatically tracks moving subjects.', image: '/products/cameras/dualwatch-highlight-2.png' },
+            { title: 'Color Night Vision', desc: 'True color even in pitch darkness.', image: '/products/cameras/dualwatch-highlight-3.png' },
+            { title: 'Active Deterrence', desc: 'Siren and spotlight warn off intruders.', image: '/products/cameras/dualwatch-highlight-4.png' }
         ],
         specs: {
             'Resolution': '3MP Fixed + 5MP PTZ (Total 8MP)',
@@ -72,7 +72,7 @@ export const products: Product[] = [
         price: 89.99,
         rating: 4.7,
         reviews: 85,
-        image: '/images/product-cameras.png',
+        image: '/products/cameras/alertflash-main.png',
         badges: ['Active Deterrence'],
         tagline: 'Stop Crime Before It Happens.',
         description: 'Active deterrence camera with red/blue strobes and 110dB siren.',
@@ -83,9 +83,9 @@ export const products: Product[] = [
             "AlertFlash supports red‑blue warning lights for a stronger deterrent to intruders. It supports four night vision modes for clear‑as‑day clarity even in pitch dark."
         ],
         highlights: [
-            { title: 'Red & Blue Strobe', desc: 'Police-style flashing lights to deter.', image: '/images/product-cameras.png' },
-            { title: '110dB Siren', desc: 'Loud alarm triggered by motion.', image: '/images/hero-banner.png' },
-            { title: 'Pan & Tilt', desc: '0–355° pan and 0–90° tilt to reduce blind spots.', image: '/images/hero2.jpg' }
+            { title: 'Red & Blue Strobe', desc: 'Police-style flashing lights to deter.', image: '/products/cameras/alertflash-highlight-1.png' },
+            { title: '110dB Siren', desc: 'Loud alarm triggered by motion.', image: '/products/cameras/alertflash-highlight-2.png' },
+            { title: 'Pan & Tilt', desc: '0–355° pan and 0–90° tilt to reduce blind spots.', image: '/products/cameras/alertflash-highlight-3.png' }
         ],
         specs: {
             'Resolution': '3MP (2304×1296)',
@@ -110,7 +110,7 @@ export const products: Product[] = [
         price: 69.99,
         rating: 4.6,
         reviews: 210,
-        image: '/images/product-cameras.png',
+        image: '/products/cameras/guardianeye-main.png',
         badges: ['Best Value'],
         tagline: 'See Everything, Miss Nothing.',
         description: '360° coverage weatherproof PTZ camera for total home security.',
@@ -121,9 +121,9 @@ export const products: Product[] = [
             "It supports four night vision modes for clear‑as‑day clarity even in pitch dark. With IP66 certified, the camera can be used outdoors under different weather conditions."
         ],
         highlights: [
-            { title: '360° Pan/Tilt', desc: 'Full coverage of your yard.', image: '/images/hero2.jpg' },
-            { title: 'IP66 Weatherproof', desc: 'Built for rain and snow.', image: '/images/scenario-retail.png' },
-            { title: 'Smart Tracking', desc: 'Automatically tracks moving objects.', image: '/images/product-cameras.png' }
+            { title: '360° Pan/Tilt', desc: 'Full coverage of your yard.', image: '/products/cameras/guardianeye-highlight-1.png' },
+            { title: 'IP66 Weatherproof', desc: 'Built for rain and snow.', image: '/products/cameras/guardianeye-highlight-2.png' },
+            { title: 'Smart Tracking', desc: 'Automatically tracks moving objects.', image: '/products/cameras/guardianeye-highlight-3.png' }
         ],
         specs: {
             'Resolution': '3MP (2304×1296)',
@@ -148,7 +148,7 @@ export const products: Product[] = [
         price: 49.99,
         rating: 4.9,
         reviews: 340,
-        image: '/images/product-cameras.png',
+        image: '/products/cameras/voyager-main.png',
         badges: ['Pet Friendly'],
         tagline: 'Your Smart Home Observer.',
         description: 'Smart indoor pan/tilt camera with privacy mode and baby crying detection.',
@@ -159,9 +159,9 @@ export const products: Product[] = [
             "Human Detection quickly finds human targets in images and immediately sends a notification to you. Privacy Mode helps protect your personal privacy when you are home."
         ],
         highlights: [
-            { title: 'Baby Crying Detect', desc: 'Instant alerts when baby cries.', image: '/images/scenario-soho.png' },
-            { title: 'Privacy Mode', desc: 'Lens hides away when you are home.', image: '/images/hero-banner.png' },
-            { title: 'Full-room Coverage', desc: '0–355° pan & -5–80° tilt.', image: '/images/product-cameras.png' }
+            { title: 'Baby Crying Detect', desc: 'Instant alerts when baby cries.', image: '/products/cameras/voyager-highlight-1.png' },
+            { title: 'Privacy Mode', desc: 'Lens hides away when you are home.', image: '/products/cameras/voyager-highlight-2.png' },
+            { title: 'Full-room Coverage', desc: '0–355° pan & -5–80° tilt.', image: '/products/cameras/voyager-highlight-3.png' }
         ],
         specs: {
             'Resolution': '3MP / 2K',
@@ -186,7 +186,7 @@ export const products: Product[] = [
         price: 149.99,
         rating: 4.8,
         reviews: 98,
-        image: '/images/product-doorbell.png',
+        image: '/products/doorbell/pivot-main.png',
         badges: ['Wire-Free', '2K Resolution'],
         tagline: 'Answer Your Door, Anywhere.',
         description: 'Battery video doorbell with wide angle view and package detection.',
@@ -197,9 +197,9 @@ export const products: Product[] = [
             "With a 5000mAh rechargeable battery, Pivot is 100% wire‑free, waterproof and easy to install."
         ],
         highlights: [
-            { title: '2K Resolution', desc: 'Crisp video to see every detail.', image: '/images/product-doorbell.png' },
-            { title: 'Battery Powered', desc: 'Easy installation without wires.', image: '/images/hero2.jpg' },
-            { title: 'Package Detection', desc: 'Know when deliveries arrive.', image: '/images/scenario-residential.png' }
+            { title: '2K Resolution', desc: 'Crisp video to see every detail.', image: '/products/doorbell/pivot-highlight-1.png' },
+            { title: 'Battery Powered', desc: 'Easy installation without wires.', image: '/products/doorbell/pivot-highlight-2.png' },
+            { title: 'Package Detection', desc: 'Know when deliveries arrive.', image: '/products/doorbell/pivot-highlight-3.png' }
         ],
         specs: {
             'Resolution': '2K 3MP (2048×1536)',
@@ -225,7 +225,7 @@ export const products: Product[] = [
         price: 199.99,
         rating: 4.9,
         reviews: 56,
-        image: '/images/product-lock.png',
+        image: '/products/lock/sentinel-main.png',
         badges: ['Keyless Entry', 'Fingerprint'],
         tagline: 'Keyless Freedom. Total Security.',
         description: '5-in-1 keyless entry smart lock with fingerprint and app control.',
@@ -236,9 +236,9 @@ export const products: Product[] = [
             "Manage your lock effortlessly through a Wi‑Fi enabled mobile app, featuring user management and real‑time alerts."
         ],
         highlights: [
-            { title: '5 Unlocking Ways', desc: 'Fingerprint, Code, App, Card, Key.', image: '/images/product-lock.png' },
-            { title: 'Remote Control', desc: 'Manage access from anywhere.', image: '/images/app-interface.png' },
-            { title: 'Auto-Lock', desc: 'Secure your home automatically.', image: '/images/hero-banner.png' }
+            { title: '5 Unlocking Ways', desc: 'Fingerprint, Code, App, Card, Key.', image: '/products/lock/sentinel-highlight-1.png' },
+            { title: 'Remote Control', desc: 'Manage access from anywhere.', image: '/products/lock/sentinel-highlight-2.png' },
+            { title: 'Auto-Lock', desc: 'Secure your home automatically.', image: '/products/lock/sentinel-highlight-3.png' }
         ],
         specs: {
             'Battery': '4xAA (12 Months)',

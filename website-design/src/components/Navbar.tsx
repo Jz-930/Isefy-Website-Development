@@ -61,7 +61,7 @@ export default function Navbar() {
         >
             <div className="container-custom flex justify-between items-center w-full h-full relative">
                 <Link href="/" className="logo flex-shrink-0 z-50">
-                    <Image src="/logo.png" alt="ISEFY Logo" width={150} height={45} className="h-[40px] w-auto" />
+                    <Image src="/common/logo.png" alt="ISEFY Logo" width={150} height={45} className="h-[40px] w-auto" />
                 </Link>
 
                 {/* Desktop Nav */}

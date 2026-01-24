@@ -66,7 +66,7 @@ const KeyFeaturesSection: React.FC<KeyPointsProps> = ({ points }) => {
                     }}
                 >
                     <Image
-                        src={activePoint.image || '/images/hero-banner.png'}
+                        src={activePoint.image || '/hero/homepage-slide-1.jpg'}
                         alt="Background"
                         fill
                         className="object-cover"
@@ -145,7 +145,7 @@ const KeyFeaturesSection: React.FC<KeyPointsProps> = ({ points }) => {
                                 />
                             ) : (
                                 <Image
-                                    src={activePoint.image || '/images/hero-banner.png'}
+                                    src={activePoint.image || '/hero/homepage-slide-1.jpg'}
                                     alt={activePoint.title}
                                     fill
                                     className="object-cover"

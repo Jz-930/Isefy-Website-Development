@@ -122,7 +122,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                         <div className="flex-1 order-1 md:order-2">
                             {/* Keep the placeholder box content image or the product image if generic */}
                             <div className="rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50">
-                                <img src="/images/box-content.png" alt="In the box" className="w-full h-auto object-cover" />
+                                <img src="/products/shared/box-content.png" alt="In the box" className="w-full h-auto object-cover" />
                             </div>
                         </div>
                     </div>

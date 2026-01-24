@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-10 mb-12">
                     <div className="flex flex-col">
                         <div className="mb-5 brightness-0 invert opacity-100">
-                            <Image src="/logo.png" alt="ISEFY" width={120} height={30} className="h-[30px] w-auto" />
+                            <Image src="/common/logo.png" alt="ISEFY" width={120} height={30} className="h-[30px] w-auto" />
                         </div>
                         <p className="text-sm leading-relaxed mb-6">Your innovative partner in home security technology.</p>
                         <div className="flex gap-4 text-xl">

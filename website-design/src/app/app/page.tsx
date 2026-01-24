@@ -51,7 +51,7 @@ export default function AppPage() {
                                 {/* Image */}
                                 <div className="relative w-full h-full bg-slate-800">
                                     <Image
-                                        src="/images/app-interface.png"
+                                        src="/app/interface-hero.png"
                                         alt="ISEFY App Interface"
                                         fill
                                         className="object-cover"
@@ -81,32 +81,32 @@ export default function AppPage() {
                             {
                                 title: 'Smart Color Night Vision',
                                 desc: 'Four smart night vision modes provide clear full‑color or black‑and‑white pictures even in complete darkness.',
-                                image: '/images/app_features/night_vision.png'
+                                image: '/app/night-vision.png'
                             },
                             {
                                 title: 'Advanced AI Detection',
                                 desc: 'Proprietary algorithms enhance accuracy, minimize false alerts, and elevate home security.',
-                                image: '/images/app_features/ai_detection.png'
+                                image: '/app/ai-detection.png'
                             },
                             {
                                 title: 'Detection Region',
                                 desc: 'Tap and select grids to set motion detection areas specific to your home layout.',
-                                image: '/images/app_features/detection_region.png'
+                                image: '/app/detection-region.png'
                             },
                             {
                                 title: 'Variable Voice Talk',
                                 desc: 'Interact with visitors or dissuade unwelcome people while protecting your privacy with voice changing options.',
-                                image: '/images/app_features/voice_talk.png'
+                                image: '/app/voice-talk.png'
                             },
                             {
                                 title: 'Active Deterrence',
                                 desc: 'Built‑in spotlight and 110dB siren activate automatically when intrusion is detected.',
-                                image: '/images/app_features/active_deterrence.png'
+                                image: '/app/active-deterrence.png'
                             },
                             {
                                 title: 'Smart Control',
                                 desc: 'Create scenes, set routines, and schedule defense that adapts to your daily life.',
-                                image: '/images/app_features/smart_control.png'
+                                image: '/app/smart-control.png'
                             }
                         ].map((feature, idx) => (
                             <div key={idx} className="flex flex-col bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 group">

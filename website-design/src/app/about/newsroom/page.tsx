@@ -14,7 +14,7 @@ export default function NewsroomPage() {
             title: 'ISEFY Included in "Top 10 Smart Home Securities of 2024"',
             date: 'December 10, 2024',
             category: 'Awards',
-            image: '/images/hero.jpg', // Placeholder
+            image: '/hero/homepage-slide-1.jpg',
             excerpt: 'We are honored to be recognized for our commitment to privacy and AI innovation in the home security space.',
         },
         {
@@ -22,7 +22,7 @@ export default function NewsroomPage() {
             title: 'Launching the New Pro Series: AI Detection Redefined',
             date: 'November 22, 2024',
             category: 'Product Launch',
-            image: '/images/hero2.jpg', // Placeholder
+            image: '/hero/products-hero.jpg',
             excerpt: 'Introducing our advanced Pro Series cameras with edge-based AI that detects packages, pets, and familiar faces instantly.',
         },
         {
@@ -30,7 +30,7 @@ export default function NewsroomPage() {
             title: 'ISEFY Partners with GreenEnergy for Sustainable Security',
             date: 'October 15, 2024',
             category: 'Partnership',
-            image: '/images/hero.jpg', // Placeholder
+            image: '/hero/homepage-slide-1.jpg',
             excerpt: 'A new collaboration to power our outdoor cameras with high-efficiency solar panels, reducing carbon footprint.',
         },
         {
@@ -38,7 +38,7 @@ export default function NewsroomPage() {
             title: 'Community Safety Initiative: Giving Back to Local Neighborhoods',
             date: 'September 05, 2024',
             category: 'Community',
-            image: '/images/hero2.jpg', // Placeholder
+            image: '/hero/products-hero.jpg',
             excerpt: 'We believe safety is a right. Learn about our new program donating security systems to community centers.',
         },
     ];
@@ -49,7 +49,7 @@ export default function NewsroomPage() {
             <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/hero2.jpg"
+                        src="/hero/newsroom-hero.jpg"
                         alt="Newsroom Hero"
                         fill
                         className="object-cover opacity-30 mix-blend-overlay"

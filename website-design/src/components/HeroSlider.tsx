@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 
 const HERO_IMAGES = [
-    '/images/hero.jpg',
-    '/images/hero.jpg',
-    '/images/hero.jpg',
+    '/hero/homepage-slide-1.jpg',
+    '/hero/homepage-slide-2.jpg',
+    '/hero/homepage-slide-3.jpg',
 ];
 
 const variants = {

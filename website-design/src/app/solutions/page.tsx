@@ -8,7 +8,7 @@ export default function SolutionsPage() {
             <section className="bg-slate-900 text-white py-24 relative overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/hero.jpg"
+                        src="/hero/solutions-hero.jpg"
                         alt="Solutions Hero Background"
                         fill
                         className="object-cover"
@@ -32,7 +32,7 @@ export default function SolutionsPage() {
                         <div className="group border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all hover:border-blue-100">
                             <div className="h-48 relative rounded-2xl overflow-hidden mb-6 bg-gray-100">
                                 <Image
-                                    src="/images/scenario-residential.png"
+                                    src="/solutions/residential.png"
                                     alt="Residential"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -51,7 +51,7 @@ export default function SolutionsPage() {
                         <div className="group border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all hover:border-blue-100">
                             <div className="h-48 relative rounded-2xl overflow-hidden mb-6 bg-gray-100">
                                 <Image
-                                    src="/images/scenario-retail.png"
+                                    src="/solutions/retail.png"
                                     alt="Retail Store"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -70,7 +70,7 @@ export default function SolutionsPage() {
                         <div className="group border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all hover:border-blue-100">
                             <div className="h-48 relative rounded-2xl overflow-hidden mb-6 bg-gray-100">
                                 <Image
-                                    src="/images/scenario-soho.png"
+                                    src="/solutions/soho.png"
                                     alt="SOHO Office"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"

@@ -10,7 +10,7 @@ export default function CloudPage() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/hero.jpg"
+                        src="/hero/cloud-hero.jpg"
                         alt="Cloud Service Hero"
                         fill
                         className="object-cover opacity-60"

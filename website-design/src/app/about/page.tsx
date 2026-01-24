@@ -8,7 +8,7 @@ export default function AboutPage() {
             <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/hero2.jpg"
+                        src="/hero/about-hero.jpg"
                         alt="About ISEFY"
                         fill
                         className="object-cover opacity-50 mix-blend-overlay"
@@ -32,7 +32,7 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="relative aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/hero.jpg"
+                                src="/about/mission.jpg"
                                 alt="Our Mission"
                                 fill
                                 className="object-cover"
@@ -96,7 +96,7 @@ export default function AboutPage() {
                         {/* Newsroom Entry */}
                         <a href="/about/newsroom" className="group relative h-80 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                             <Image
-                                src="/images/hero2.jpg" // Reusing hero2 as placeholder
+                                src="/about/commitment-1.jpg"
                                 alt="Newsroom"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -119,7 +119,7 @@ export default function AboutPage() {
                         {/* Privacy Policy Entry */}
                         <a href="/about/privacy" className="group relative h-80 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                             <Image
-                                src="/images/hero.jpg" // Reusing hero as placeholder
+                                src="/about/commitment-2.jpg"
                                 alt="Privacy Policy"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"

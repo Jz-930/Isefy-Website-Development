@@ -20,7 +20,7 @@ export default function ProductsPage() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/hero2.jpg"
+                        src="/hero/products-hero.jpg"
                         alt="Products Hero"
                         fill
                         className="object-cover opacity-80"

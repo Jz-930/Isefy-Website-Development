@@ -50,7 +50,7 @@ export default function Home() {
             <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
               {/* Image Area */}
               <div className="relative h-56 w-full">
-                <Image src="/images/scenario-residential.png" alt="Vivid Night Vision" fill className="object-cover" />
+                <Image src="/homepage/features/night-vision.png" alt="Vivid Night Vision" fill className="object-cover" />
               </div>
 
               {/* Content Area */}
@@ -69,7 +69,7 @@ export default function Home() {
             <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
               {/* Image Area */}
               <div className="relative h-56 w-full">
-                <Image src="/images/scenario-retail.png" alt="AI-Powered Detection" fill className="object-cover" />
+                <Image src="/homepage/features/ai-detection.png" alt="AI-Powered Detection" fill className="object-cover" />
               </div>
 
               {/* Content Area */}
@@ -88,7 +88,7 @@ export default function Home() {
             <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
               {/* Image Area */}
               <div className="relative h-56 w-full">
-                <Image src="/images/scenario-soho.png" alt="Active Defense" fill className="object-cover" />
+                <Image src="/homepage/features/active-defense.png" alt="Active Defense" fill className="object-cover" />
               </div>
 
               {/* Content Area */}
@@ -107,7 +107,7 @@ export default function Home() {
             <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
               {/* Image Area */}
               <div className="relative h-56 w-full">
-                <Image src="/images/product-doorbell.png" alt="Real-Time Talk" fill className="object-cover" />
+                <Image src="/homepage/features/real-time-talk.png" alt="Real-Time Talk" fill className="object-cover" />
               </div>
 
               {/* Content Area */}
@@ -126,7 +126,7 @@ export default function Home() {
             <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
               {/* Image Area */}
               <div className="relative h-56 w-full">
-                <Image src="/images/app-interface.png" alt="All-in-One Control" fill className="object-cover" />
+                <Image src="/homepage/features/all-in-one-control.png" alt="All-in-One Control" fill className="object-cover" />
               </div>
 
               {/* Content Area */}
@@ -145,7 +145,7 @@ export default function Home() {
             <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
               {/* Image Area */}
               <div className="relative h-56 w-full">
-                <Image src="/images/cloud-services.png" alt="Custom Security Zones" fill className="object-cover" />
+                <Image src="/homepage/features/custom-security-zones.png" alt="Custom Security Zones" fill className="object-cover" />
               </div>
 
               {/* Content Area */}
@@ -184,7 +184,7 @@ export default function Home() {
               </div>
               <div className="relative aspect-[4/3] w-full">
                 <Image
-                  src="/images/ecosystem-exterior-placeholder.png"
+                  src="/homepage/ecosystem/exterior.png"
                   alt="Exterior Home Protection - Pivot, Alert Flash"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -206,7 +206,7 @@ export default function Home() {
               </div>
               <div className="relative aspect-[4/3] w-full">
                 <Image
-                  src="/images/ecosystem-interior-placeholder.png"
+                  src="/homepage/ecosystem/interior.png"
                   alt="Interior Home Protection - Voyager, Sentinel"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -229,7 +229,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-white border border-gray-100">
               <Image
-                src="/images/cloud-services.png"
+                src="/homepage/ecosystem/cloud-services.png"
                 alt="ISEFY Cloud"
                 fill
                 className="object-cover"

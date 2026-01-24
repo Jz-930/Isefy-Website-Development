@@ -7,7 +7,7 @@ export default function ShopHero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/banner_shop.png" // Fallback to banner_shop if dedicated not available, or hero.jpg
+                    src="/shop/banner.png"
                     alt="Shop Hero"
                     fill
                     className="object-cover opacity-60"

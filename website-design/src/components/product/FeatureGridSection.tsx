@@ -33,7 +33,7 @@ const FeatureGridSection: React.FC<FeatureGridProps> = ({ features }) => {
             {/* Image Area with dynamic aspect ratio */}
             <div className={`relative w-full ${getAspectRatioClass(idx, isRight)} bg-gray-200`}>
                 <Image
-                    src={feature.image || '/images/hero.jpg'}
+                    src={feature.image || '/hero/homepage-slide-1.jpg'}
                     alt={feature.title}
                     fill
                     className="object-cover"
