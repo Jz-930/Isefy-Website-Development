@@ -11,6 +11,7 @@ export interface ProductContent {
         title: string;
         description: string;
         icon?: string; // FontAwesome icon name (without fa- prefix)
+        image?: string;
     }[];
 }
 
@@ -40,12 +41,12 @@ export const productContent: Record<string, ProductContent> = {
             }
         ],
         secondaryFeatures: [
-            { title: '3MP 2K Video', description: 'Crystal clear video quality to see every detail.', icon: 'video' },
-            { title: 'Loitering Detection', description: 'Get notified if someone lingers at your door.', icon: 'user-clock' },
-            { title: '100% Wire-free', description: 'Easy installation with no wires needed.', icon: 'battery-full' },
-            { title: 'Optional Hardwired', description: 'Can support hardwired power supply.', icon: 'plug' },
-            { title: 'PIR + Human Detection', description: 'Accurate alerts with reduced false alarms.', icon: 'user-check' },
-            { title: 'Two-way talk', description: 'Variable Voice options for privacy and fun.', icon: 'microphone-alt' }
+            { title: '3MP 2K Video', description: 'Crystal clear video quality to see every detail.', icon: 'video', image: '/images/scenario-residential.png' },
+            { title: 'Loitering Detection', description: 'Get notified if someone lingers at your door.', icon: 'user-clock', image: '/images/ai-analysis.png' },
+            { title: '100% Wire-free', description: 'Easy installation with no wires needed.', icon: 'battery-full', image: '/images/product-doorbell.png' },
+            { title: 'Optional Hardwired', description: 'Can support hardwired power supply.', icon: 'plug', image: '/images/scenario-soho.png' },
+            { title: 'PIR + Human Detection', description: 'Accurate alerts with reduced false alarms.', icon: 'user-check', image: '/images/ai-analysis.png' },
+            { title: 'Two-way talk', description: 'Variable Voice options for privacy and fun.', icon: 'microphone-alt', image: '/images/app-interface.png' }
         ]
     },
     'dualwatch-outdoor-camera': {
@@ -95,12 +96,12 @@ export const productContent: Record<string, ProductContent> = {
             }
         ],
         secondaryFeatures: [
-            { title: '3MP Fixed Lens + 5MP Pan & Tilt Lens', description: 'Combined dual-lens system for both wide-angle monitoring and detailed close-ups.', icon: 'camera' },
-            { title: 'Smart Color Night Vision', description: 'Capture vivid colors even in low-light conditions with built-in spotlights.', icon: 'eye' },
-            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation in rain or shine.', icon: 'umbrella' },
-            { title: 'Two-way Talk', description: 'Listen and talk back to visitors in real-time via the app.', icon: 'microphone-alt' },
-            { title: 'Smart Tracking', description: 'Automatically tracks moving people or vehicles to keep them in frame.', icon: 'running' },
-            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence system to warn off potential intruders immediately.', icon: 'bullhorn' }
+            { title: '3MP Fixed Lens + 5MP Pan & Tilt Lens', description: 'Combined dual-lens system for both wide-angle monitoring and detailed close-ups.', icon: 'camera', image: '/images/product-cameras.png' },
+            { title: 'Smart Color Night Vision', description: 'Capture vivid colors even in low-light conditions with built-in spotlights.', icon: 'eye', image: '/images/hero2.jpg' },
+            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation in rain or shine.', icon: 'umbrella', image: '/images/scenario-residential.png' },
+            { title: 'Two-way Talk', description: 'Listen and talk back to visitors in real-time via the app.', icon: 'microphone-alt', image: '/images/app-interface.png' },
+            { title: 'Smart Tracking', description: 'Automatically tracks moving people or vehicles to keep them in frame.', icon: 'running', image: '/images/ai-analysis.png' },
+            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence system to warn off potential intruders immediately.', icon: 'bullhorn', image: '/images/hero-banner.png' }
         ]
     },
     'alertflash-active-deterrence': {
@@ -152,12 +153,12 @@ export const productContent: Record<string, ProductContent> = {
             }
         ],
         secondaryFeatures: [
-            { title: '3MP H.265 Video', description: 'Crystal clear video quality to see every detail.', icon: 'video' },
-            { title: 'Smart Color Night Vision', description: 'See real colors rather than low-detail grayscale.', icon: 'eye' },
-            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation.', icon: 'umbrella' },
-            { title: 'Two-way Talk', description: 'Listen and talk back through the camera.', icon: 'microphone' },
-            { title: 'Smart Tracking & Human Detection', description: 'Automatically follows moving objects.', icon: 'user-check' },
-            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence to warn off intruders.', icon: 'lightbulb' }
+            { title: '3MP H.265 Video', description: 'Crystal clear video quality to see every detail.', icon: 'video', image: '/images/hero.jpg' },
+            { title: 'Smart Color Night Vision', description: 'See real colors rather than low-detail grayscale.', icon: 'eye', image: '/images/hero2.jpg' },
+            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation.', icon: 'umbrella', image: '/images/scenario-residential.png' },
+            { title: 'Two-way Talk', description: 'Listen and talk back through the camera.', icon: 'microphone', image: '/images/app-interface.png' },
+            { title: 'Smart Tracking & Human Detection', description: 'Automatically follows moving objects.', icon: 'user-check', image: '/images/ai-analysis.png' },
+            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence to warn off intruders.', icon: 'lightbulb', image: '/images/hero-banner.png' }
         ]
     },
     'voyager-indoor-pt': {
@@ -197,12 +198,12 @@ export const productContent: Record<string, ProductContent> = {
             }
         ],
         secondaryFeatures: [
-            { title: 'Baby Crying Detect', description: 'Instant alerts when your baby needs attention.', icon: 'baby' },
-            { title: 'Pet Monitoring', description: 'Keep an eye on your pets while you are away.', icon: 'paw' },
-            { title: 'Privacy Shield', description: 'Physical lens cover for guaranteed privacy.', icon: 'user-secret' },
-            { title: '360° Coverage', description: 'Pan and tilt to overlook the entire room.', icon: 'arrows-alt' },
-            { title: 'Motion Tracking', description: 'Follows movement to keep subjects in frame.', icon: 'walking' },
-            { title: 'Sleep Mode', description: 'Schedule camera to turn off when you are home.', icon: 'bed' }
+            { title: 'Baby Crying Detect', description: 'Instant alerts when your baby needs attention.', icon: 'baby', image: '/images/scenario-soho.png' },
+            { title: 'Pet Monitoring', description: 'Keep an eye on your pets while you are away.', icon: 'paw', image: '/images/scenario-residential.png' },
+            { title: 'Privacy Shield', description: 'Physical lens cover for guaranteed privacy.', icon: 'user-secret', image: '/images/product-cameras.png' },
+            { title: '360° Coverage', description: 'Pan and tilt to overlook the entire room.', icon: 'arrows-alt', image: '/images/hero-banner.png' },
+            { title: 'Motion Tracking', description: 'Follows movement to keep subjects in frame.', icon: 'walking', image: '/images/ai-analysis.png' },
+            { title: 'Sleep Mode', description: 'Schedule camera to turn off when you are home.', icon: 'bed', image: '/images/app-interface.png' }
         ]
     },
     'sentinel-smart-lock': {
@@ -243,10 +244,10 @@ export const productContent: Record<string, ProductContent> = {
             }
         ],
         secondaryFeatures: [
-            { title: 'Easy Setup', description: 'Easy setup with ISEFY APP.', icon: 'mobile-alt' },
-            { title: 'Multidimensional Fingerprint', description: 'Advanced biometric recognition.', icon: 'fingerprint' },
-            { title: '12-Month Battery Life', description: '4* AA battery for 12 months.', icon: 'battery-full' },
-            { title: 'Abnormal Event Alert', description: 'Forced Lock, Anomaly, Low Battery.', icon: 'exclamation-triangle' }
+            { title: 'Easy Setup', description: 'Easy setup with ISEFY APP.', icon: 'mobile-alt', image: '/images/app-interface.png' },
+            { title: 'Multidimensional Fingerprint', description: 'Advanced biometric recognition.', icon: 'fingerprint', image: '/images/product-lock.png' },
+            { title: '12-Month Battery Life', description: '4* AA battery for 12 months.', icon: 'battery-full', image: '/images/product-lock.png' },
+            { title: 'Abnormal Event Alert', description: 'Forced Lock, Anomaly, Low Battery.', icon: 'exclamation-triangle', image: '/images/app-interface.png' }
         ]
     },
     'guardianeye-ptz': {
@@ -287,12 +288,12 @@ export const productContent: Record<string, ProductContent> = {
             }
         ],
         secondaryFeatures: [
-            { title: '3MP H.265 Video', description: 'Crystal clear video quality to see every detail.', icon: 'video' },
-            { title: 'Smart Color Night Vision', description: 'See real colors rather than low-detail grayscale.', icon: 'eye' },
-            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation.', icon: 'umbrella' },
-            { title: 'Two-way Talk', description: 'Listen and talk back through the camera.', icon: 'microphone-alt' },
-            { title: 'Alarm Notification', description: 'Instant alerts sent to your phone when events occur.', icon: 'bell' },
-            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence to warn off intruders.', icon: 'lightbulb' }
+            { title: '3MP H.265 Video', description: 'Crystal clear video quality to see every detail.', icon: 'video', image: '/images/product-cameras.png' },
+            { title: 'Smart Color Night Vision', description: 'See real colors rather than low-detail grayscale.', icon: 'eye', image: '/images/hero2.jpg' },
+            { title: 'IP66 Waterproof', description: 'Rugged design for reliable outdoor operation.', icon: 'umbrella', image: '/images/scenario-residential.png' },
+            { title: 'Two-way Talk', description: 'Listen and talk back through the camera.', icon: 'microphone-alt', image: '/images/app-interface.png' },
+            { title: 'Alarm Notification', description: 'Instant alerts sent to your phone when events occur.', icon: 'bell', image: '/images/app-interface.png' },
+            { title: 'Built-in spotlight and 110dB security siren', description: 'Active deterrence to warn off intruders.', icon: 'lightbulb', image: '/images/hero-banner.png' }
         ]
     }
 };
@@ -329,6 +330,16 @@ export const cloudPageContent: CloudPageContent = {
         },
         {
             title: "AI Analysis",
+            description: "Advanced AI algorithms analyze your video feeds to detect humans, vehicles, pets, and packages, reducing false alarms and providing smarter insights.",
+            image: "/images/ai-analysis.png" // Placeholder
+        },
+        {
+            title: "Cloud Playback (2)",
+            description: "Review footage from anywhere, anytime. Your data is securely stored in the cloud, ensuring you never miss a moment even if your device is offline.",
+            image: "/images/cloud-playback.png" // Placeholder
+        },
+        {
+            title: "AI Analysis (2)",
             description: "Advanced AI algorithms analyze your video feeds to detect humans, vehicles, pets, and packages, reducing false alarms and providing smarter insights.",
             image: "/images/ai-analysis.png" // Placeholder
         }

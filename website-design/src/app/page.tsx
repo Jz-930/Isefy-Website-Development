@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HeroSlider from '../components/HeroSlider';
+import HeroSection from '../components/HeroSection';
 import ProductLineCards from '../components/ProductLineCards';
 import PromotionSection from '../components/PromotionSection';
 
@@ -8,25 +8,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
-        <HeroSlider />
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6 drop-shadow-lg">
-            Complete Home Protection<br />by <span className="text-accent">ISEFY</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
-            ISEFY's smart solution integrates all our products into a single app for seamless interaction.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/products" className="btn-primary">
-              View Products
-            </Link>
-            <Link href="/solutions" className="px-8 py-3 rounded-full font-semibold border-2 border-white text-white hover:bg-white hover:text-isefy-dark-blue transition-all">
-              Explore Solutions
-            </Link>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
 
 
@@ -65,108 +47,114 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Capability 1: Vivid Night Vision */}
-            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
-              {/* Hover Background Image */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/scenario-residential.png" alt="Background" fill className="object-cover" />
+            <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
+              {/* Image Area */}
+              <div className="relative h-56 w-full">
+                <Image src="/images/scenario-residential.png" alt="Vivid Night Vision" fill className="object-cover" />
               </div>
 
-              <div className="relative z-10">
+              {/* Content Area */}
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-moon text-2xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">Vivid Night Vision</h3>
-                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Vivid Night Vision</h3>
+                <p className="text-slate-500 leading-relaxed">
                   See every detail in color, even in pitch black darkness with 4 smart modes tailored to your specific environment.
                 </p>
               </div>
             </div>
 
             {/* Capability 2: AI-Powered Detection */}
-            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
-              {/* Hover Background Image */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/scenario-retail.png" alt="Background" fill className="object-cover" />
+            <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
+              {/* Image Area */}
+              <div className="relative h-56 w-full">
+                <Image src="/images/scenario-retail.png" alt="AI-Powered Detection" fill className="object-cover" />
               </div>
 
-              <div className="relative z-10">
+              {/* Content Area */}
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-robot text-2xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">AI-Powered Detection</h3>
-                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">AI-Powered Detection</h3>
+                <p className="text-slate-500 leading-relaxed">
                   Instantly distinguishes between humans, vehicles, and pets to reduce false alerts and focus on what truly matters.
                 </p>
               </div>
             </div>
 
             {/* Capability 3: Active Defense */}
-            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
-              {/* Hover Background Image */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/scenario-soho.png" alt="Background" fill className="object-cover" />
+            <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
+              {/* Image Area */}
+              <div className="relative h-56 w-full">
+                <Image src="/images/scenario-soho.png" alt="Active Defense" fill className="object-cover" />
               </div>
 
-              <div className="relative z-10">
+              {/* Content Area */}
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-rose-500 to-red-600 flex items-center justify-center mb-6 shadow-lg shadow-red-500/30 group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-shield-alt text-2xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">Active Defense</h3>
-                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Active Defense</h3>
+                <p className="text-slate-500 leading-relaxed">
                   Auto-trigger spotlights and sirens up to 110dB to actively deter potential intruders before they break in.
                 </p>
               </div>
             </div>
 
             {/* Capability 4: Real-Time Talk */}
-            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
-              {/* Hover Background Image */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/product-doorbell.png" alt="Background" fill className="object-cover" />
+            <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
+              {/* Image Area */}
+              <div className="relative h-56 w-full">
+                <Image src="/images/product-doorbell.png" alt="Real-Time Talk" fill className="object-cover" />
               </div>
 
-              <div className="relative z-10">
+              {/* Content Area */}
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-microphone text-2xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">Real-Time Talk</h3>
-                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Real-Time Talk</h3>
+                <p className="text-slate-500 leading-relaxed">
                   Full-duplex communication with noise cancellation lets you talk and listen to visitors clearly in real-time.
                 </p>
               </div>
             </div>
 
             {/* Capability 5: All-in-One Control */}
-            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
-              {/* Hover Background Image */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/app-interface.png" alt="Background" fill className="object-cover" />
+            <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
+              {/* Image Area */}
+              <div className="relative h-56 w-full">
+                <Image src="/images/app-interface.png" alt="All-in-One Control" fill className="object-cover" />
               </div>
 
-              <div className="relative z-10">
+              {/* Content Area */}
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-mobile-alt text-2xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-white transition-colors">All-in-One Control</h3>
-                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">All-in-One Control</h3>
+                <p className="text-slate-500 leading-relaxed">
                   Manage all cameras, smart locks, and sensors from a single intuitive app, anytime, anywhere.
                 </p>
               </div>
             </div>
 
             {/* Capability 6: Custom Security Zones */}
-            <div className="group bg-white hover:bg-slate-900 rounded-3xl p-8 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-100 hover:border-slate-800 relative overflow-hidden">
-              {/* Hover Background Image */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none">
-                <Image src="/images/cloud-services.png" alt="Background" fill className="object-cover" />
+            <div className="group bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-900/20 hover:-translate-y-2 transition-all duration-300 border border-slate-200 overflow-hidden flex flex-col h-full">
+              {/* Image Area */}
+              <div className="relative h-56 w-full">
+                <Image src="/images/cloud-services.png" alt="Custom Security Zones" fill className="object-cover" />
               </div>
 
-              <div className="relative z-10">
+              {/* Content Area */}
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-crop-simple text-2xl text-white"></i>
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-amber-600 transition-colors">Custom Security Zones</h3>
-                <p className="text-slate-500 leading-relaxed group-hover:text-slate-300 transition-colors">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">Custom Security Zones</h3>
+                <p className="text-slate-500 leading-relaxed">
                   Focus on what matters by simply drawing detection zones on your screen to filter out irrelevant movement.
                 </p>
               </div>

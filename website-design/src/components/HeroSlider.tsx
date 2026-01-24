@@ -76,8 +76,8 @@ export default function HeroSlider() {
                         />
                     </motion.div>
                 </AnimatePresence>
-                {/* Subtle overlay for text readability - moved outside AnimatePresence to always show */}
-                <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none"></div>
+                {/* Subtle overlay for text readability - REMOVED as per user request */}
+                {/* <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none"></div> */}
             </div>
 
             {/* Navigation Dots */}

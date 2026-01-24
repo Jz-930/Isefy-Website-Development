@@ -3,14 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-// This component is for the "Reference Image 2" style: small stacked cards/grid.
-// Since the user provided "Key Selling Points" (Primary) and the standard "Features" (Secondary),
-// we might iterate primarily on the Key Selling Points.
-// However, if there are secondary features not in the big list, we display them here.
-
-// For now, I'll allow this to take generic features or just reuse the Highlight/Icons from page.tsx logic
-// but styled as Cards with Images as requested ("Small图堆叠排放").
-
 interface FeatureGridProps {
     features: {
         title: string;
@@ -23,31 +15,61 @@ interface FeatureGridProps {
 const FeatureGridSection: React.FC<FeatureGridProps> = ({ features }) => {
     if (!features || features.length === 0) return null;
 
+    // Split features into two columns for controlled masonry
+    const leftColumn = features.filter((_, i) => i % 2 === 0);
+    const rightColumn = features.filter((_, i) => i % 2 !== 0);
+
+    // Function to determine aspect ratio based on index for visual variety
+    const getAspectRatioClass = (index: number, isRight: boolean) => {
+        // Pattern: [Tall, Squat, Square] repeating
+        const patterns = ['aspect-[3/4]', 'aspect-[4/3]', 'aspect-square'];
+        // Offset pattern for right column so they don't always match
+        const offset = isRight ? 1 : 0;
+        return patterns[(index + offset) % patterns.length];
+    };
+
+    const renderCard = (feature: any, idx: number, isRight: boolean) => (
+        <div key={idx} className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 mb-8 border border-gray-100">
+            {/* Image Area with dynamic aspect ratio */}
+            <div className={`relative w-full ${getAspectRatioClass(idx, isRight)} bg-gray-200`}>
+                <Image
+                    src={feature.image || '/images/hero.jpg'}
+                    alt={feature.title}
+                    fill
+                    className="object-cover"
+                />
+            </div>
+
+            {/* Content Area */}
+            <div className="p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed font-medium">
+                    {feature.description}
+                </p>
+            </div>
+        </div>
+    );
+
     return (
         <section className="py-24 bg-white border-t border-gray-100">
             <div className="container-custom">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold text-base-dark mb-4">More Detailed Features</h2>
-                    <p className="text-gray-500">Everything else you need to know.</p>
+                <div className="text-center mb-20">
+                    <h2 className="text-4xl font-bold text-base-dark mb-6">More Detailed Features</h2>
+                    <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+                        Discover the advanced capabilities designed to enhance your security experience.
+                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {features.map((feature, idx) => (
-                        <div key={idx} className="flex gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300">
-                            {/* Icon */}
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-isefy-blue/10 flex items-center justify-center text-isefy-blue text-xl">
-                                <i className={`fas fa-${feature.icon || 'check-circle'}`}></i>
-                            </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    {/* Left Column */}
+                    <div className="flex flex-col">
+                        {leftColumn.map((feature, idx) => renderCard(feature, idx, false))}
+                    </div>
 
-                            {/* Text */}
-                            <div>
-                                <h3 className="font-bold text-gray-900 mb-2">{feature.title}</h3>
-                                <p className="text-sm text-gray-500 leading-relaxed font-medium">
-                                    {feature.description}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+                    {/* Right Column - Staggered with margin */}
+                    <div className="flex flex-col md:mt-16">
+                        {rightColumn.map((feature, idx) => renderCard(feature, idx, true))}
+                    </div>
                 </div>
             </div>
         </section>
